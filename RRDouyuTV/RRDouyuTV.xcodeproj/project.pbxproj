@@ -18,6 +18,8 @@
 		CAEA1C891DAA79E5008853A5 /* FolloewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C871DAA79E5008853A5 /* FolloewViewController.storyboard */; };
 		CAEA1C8B1DAA79F8008853A5 /* MeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C8A1DAA79F8008853A5 /* MeViewController.storyboard */; };
 		CAEA1C8D1DAA8E28008853A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C8C1DAA8E28008853A5 /* MainViewController.swift */; };
+		CAEA1C9E1DAAA154008853A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C9D1DAAA154008853A5 /* HomeViewController.swift */; };
+		CAEA1CA11DAAA939008853A5 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1CA01DAAA939008853A5 /* UIBarButtonItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		CAEA1C881DAA79E5008853A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RRDouyuTV/Base.lproj/FolloewViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		CAEA1C8A1DAA79F8008853A5 /* MeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MeViewController.storyboard; path = "../../Main(主界面)/MeViewController.storyboard"; sourceTree = "<group>"; };
 		CAEA1C8C1DAA8E28008853A5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
+		CAEA1C9D1DAAA154008853A5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CAEA1CA01DAAA939008853A5 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,7 @@
 		CAEA1C7F1DAA6DBB008853A5 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				CAEA1C9F1DAAA615008853A5 /* Extension */,
 			);
 			path = "Tools(工具)";
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				CAEA1C821DAA79B9008853A5 /* HomeViewController.storyboard */,
+				CAEA1C9D1DAAA154008853A5 /* HomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -311,6 +317,14 @@
 				CAEA1C8C1DAA8E28008853A5 /* MainViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CAEA1C9F1DAAA615008853A5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CAEA1CA01DAAA939008853A5 /* UIBarButtonItem.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,7 +466,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */,
+				CAEA1CA11DAAA939008853A5 /* UIBarButtonItem.swift in Sources */,
 				CAEA1C8D1DAA8E28008853A5 /* MainViewController.swift in Sources */,
+				CAEA1C9E1DAAA154008853A5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

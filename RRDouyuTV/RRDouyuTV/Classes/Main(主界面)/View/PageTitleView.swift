@@ -57,6 +57,7 @@ extension PageTitleView{
             let labelY : CGFloat = 0
             label.frame = CGRect(x: labelX, y: labelY, width: labelW, height: labelH)
             scrollView.addSubview(label)
+            labels.append(label)
         }
     }
     private func addBottomLineAndScrollBottomLine(){
@@ -76,6 +77,7 @@ extension PageTitleView{
         guard let firstLable = labels.first else {
             return
         }
+        firstLable.textColor = UIColor.orange
         let scrollBottomLineW  = firstLable.frame.width
         let scrollBottomLineH  = kLineH
         let scrollBottomLineX  = firstLable.frame.origin.x

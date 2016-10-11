@@ -7,12 +7,21 @@
 //
 
 import UIKit
-
+private let TitleViewH : CGFloat = 40;
 class HomeViewController: UIViewController {
-
+    // MARK:- 懒加载PageTitleView
+    private lazy var pageTitleView : PageTitleView = {
+        let TitleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationH, width: kScreenW, height: TitleViewH)
+        let titles = ["推荐","游戏","娱乐","趣玩"]
+        let titleView = PageTitleView(frame: TitleFrame, titles: titles)
+        
+        return titleView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
+        view.addSubview(pageTitleView)
+        automaticallyAdjustsScrollViewInsets = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +34,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController{
     public func setUpUI(){
         setNavigationBar()
+        
     }
     private func setNavigationBar() {
         //设置左边的logo

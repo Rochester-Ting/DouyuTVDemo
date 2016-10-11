@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA1452861DAD180700BA39CA /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1452851DAD180700BA39CA /* PageTitleView.swift */; };
+		CA1452881DAD1AB900BA39CA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1452871DAD1AB900BA39CA /* Common.swift */; };
 		CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */; };
 		CAEA1C511DAA6A83008853A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C4F1DAA6A83008853A5 /* Main.storyboard */; };
 		CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C521DAA6A83008853A5 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA1452851DAD180700BA39CA /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		CA1452871DAD1AB900BA39CA /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		CAEA1C481DAA6A83008853A5 /* RRDouyuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRDouyuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAEA1C501DAA6A83008853A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				CAEA1C9F1DAAA615008853A5 /* Extension */,
+				CA1452871DAD1AB900BA39CA /* Common.swift */,
 			);
 			path = "Tools(工具)";
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 		CAEA1C9B1DAA938D008853A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA1452851DAD180700BA39CA /* PageTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -467,7 +473,9 @@
 			files = (
 				CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */,
 				CAEA1CA11DAAA939008853A5 /* UIBarButtonItem.swift in Sources */,
+				CA1452861DAD180700BA39CA /* PageTitleView.swift in Sources */,
 				CAEA1C8D1DAA8E28008853A5 /* MainViewController.swift in Sources */,
+				CA1452881DAD1AB900BA39CA /* Common.swift in Sources */,
 				CAEA1C9E1DAAA154008853A5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

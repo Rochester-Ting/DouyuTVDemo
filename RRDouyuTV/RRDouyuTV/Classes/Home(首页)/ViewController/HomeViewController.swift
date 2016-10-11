@@ -7,21 +7,37 @@
 //
 
 import UIKit
-private let TitleViewH : CGFloat = 40;
+private let kTitleViewH : CGFloat = 40;
 class HomeViewController: UIViewController {
     // MARK:- 懒加载PageTitleView
-    private lazy var pageTitleView : PageTitleView = {
-        let TitleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationH, width: kScreenW, height: TitleViewH)
+    public lazy var pageTitleView : PageTitleView = {
+        let TitleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = PageTitleView(frame: TitleFrame, titles: titles)
         
         return titleView
     }()
+    // MARK:- 懒加载PageContentView
+    public lazy var pageContentView : PageContentView = {
+        let pageContentViewFrame = CGRect(x: 0, y: kNavigationH + kStatusBarH + kTitleViewH, width: kScreenW, height: kScreenH)
+        // 创建一个可变数组保存childVC
+        var childVC : [UIViewController] = [UIViewController]()
+        for _ in 0..<4 {
+            let vc = UIViewController()
+            vc.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(255)) / 255.0, green: CGFloat(arc4random_uniform(255)) / 255.0, blue: CGFloat(arc4random_uniform(255)) / 255.0, alpha: 1)
+//            vc.view.backgroundColor = UIColor.red
+            childVC.append(vc)
+        }
+        let pageContentView = PageContentView(frame: pageContentViewFrame, childVC: childVC, parentVC: self)
+        
+        return pageContentView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
-        view.addSubview(pageTitleView)
+        
         automaticallyAdjustsScrollViewInsets = false
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +50,8 @@ class HomeViewController: UIViewController {
 extension HomeViewController{
     public func setUpUI(){
         setNavigationBar()
-        
+        view.addSubview(pageTitleView)
+        view.addSubview(pageContentView)
     }
     private func setNavigationBar() {
         //设置左边的logo

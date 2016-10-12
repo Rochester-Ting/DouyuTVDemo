@@ -1,0 +1,6 @@
+framework module Pods_RRDouyuTV {
+  umbrella header "Pods-RRDouyuTV-umbrella.h"
+
+  export *
+  module * { export * }
+}

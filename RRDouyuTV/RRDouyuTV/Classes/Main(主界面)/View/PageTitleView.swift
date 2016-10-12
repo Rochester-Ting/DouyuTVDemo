@@ -137,10 +137,6 @@ extension PageTitleView{
             sourceLabel.textColor = UIColor.darkGray
             targetLabel.textColor = UIColor.orange
             selectLabel = targetLabel
-//            selectLabel = sourceLabel
-//            selectLabel.textColor = UIColor.darkGray
-//            targetLabel.textColor = UIColor.orange
-            
         }
     }
 }

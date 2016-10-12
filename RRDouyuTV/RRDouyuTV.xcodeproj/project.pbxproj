@@ -1,772 +1,1701 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		CA1452861DAD180700BA39CA /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1452851DAD180700BA39CA /* PageTitleView.swift */; };
-		CA1452881DAD1AB900BA39CA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1452871DAD1AB900BA39CA /* Common.swift */; };
-		CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA030C1DAD3C30001F6704 /* PageContentView.swift */; };
-		CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */; };
-		CAEA1C511DAA6A83008853A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C4F1DAA6A83008853A5 /* Main.storyboard */; };
-		CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C521DAA6A83008853A5 /* Assets.xcassets */; };
-		CAEA1C561DAA6A83008853A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C541DAA6A83008853A5 /* LaunchScreen.storyboard */; };
-		CAEA1C611DAA6A83008853A5 /* RRDouyuTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C601DAA6A83008853A5 /* RRDouyuTVTests.swift */; };
-		CAEA1C6C1DAA6A83008853A5 /* RRDouyuTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C6B1DAA6A83008853A5 /* RRDouyuTVUITests.swift */; };
-		CAEA1C841DAA79B9008853A5 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C821DAA79B9008853A5 /* HomeViewController.storyboard */; };
-		CAEA1C861DAA79CE008853A5 /* LiveViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C851DAA79CE008853A5 /* LiveViewController.storyboard */; };
-		CAEA1C891DAA79E5008853A5 /* FolloewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C871DAA79E5008853A5 /* FolloewViewController.storyboard */; };
-		CAEA1C8B1DAA79F8008853A5 /* MeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C8A1DAA79F8008853A5 /* MeViewController.storyboard */; };
-		CAEA1C8D1DAA8E28008853A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C8C1DAA8E28008853A5 /* MainViewController.swift */; };
-		CAEA1C9E1DAAA154008853A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C9D1DAAA154008853A5 /* HomeViewController.swift */; };
-		CAEA1CA11DAAA939008853A5 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1CA01DAAA939008853A5 /* UIBarButtonItem.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CAEA1C5D1DAA6A83008853A5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAEA1C401DAA6A83008853A5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CAEA1C471DAA6A83008853A5;
-			remoteInfo = RRDouyuTV;
-		};
-		CAEA1C681DAA6A83008853A5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAEA1C401DAA6A83008853A5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CAEA1C471DAA6A83008853A5;
-			remoteInfo = RRDouyuTV;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		CA1452851DAD180700BA39CA /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
-		CA1452871DAD1AB900BA39CA /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		CAEA030C1DAD3C30001F6704 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
-		CAEA1C481DAA6A83008853A5 /* RRDouyuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRDouyuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAEA1C501DAA6A83008853A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CAEA1C521DAA6A83008853A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CAEA1C551DAA6A83008853A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CAEA1C571DAA6A83008853A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAEA1C5C1DAA6A83008853A5 /* RRDouyuTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RRDouyuTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAEA1C601DAA6A83008853A5 /* RRDouyuTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRDouyuTVTests.swift; sourceTree = "<group>"; };
-		CAEA1C621DAA6A83008853A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAEA1C671DAA6A83008853A5 /* RRDouyuTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RRDouyuTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAEA1C6B1DAA6A83008853A5 /* RRDouyuTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRDouyuTVUITests.swift; sourceTree = "<group>"; };
-		CAEA1C6D1DAA6A83008853A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAEA1C831DAA79B9008853A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RRDouyuTV/Base.lproj/HomeViewController.storyboard; sourceTree = SOURCE_ROOT; };
-		CAEA1C851DAA79CE008853A5 /* LiveViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LiveViewController.storyboard; path = "../../Main(主界面)/LiveViewController.storyboard"; sourceTree = "<group>"; };
-		CAEA1C881DAA79E5008853A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RRDouyuTV/Base.lproj/FolloewViewController.storyboard; sourceTree = SOURCE_ROOT; };
-		CAEA1C8A1DAA79F8008853A5 /* MeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MeViewController.storyboard; path = "../../Main(主界面)/MeViewController.storyboard"; sourceTree = "<group>"; };
-		CAEA1C8C1DAA8E28008853A5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
-		CAEA1C9D1DAAA154008853A5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CAEA1CA01DAAA939008853A5 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		CAEA1C451DAA6A83008853A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CAEA1C591DAA6A83008853A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CAEA1C641DAA6A83008853A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		CAEA1C3F1DAA6A83008853A5 = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C4A1DAA6A83008853A5 /* RRDouyuTV */,
-				CAEA1C5F1DAA6A83008853A5 /* RRDouyuTVTests */,
-				CAEA1C6A1DAA6A83008853A5 /* RRDouyuTVUITests */,
-				CAEA1C491DAA6A83008853A5 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		CAEA1C491DAA6A83008853A5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C481DAA6A83008853A5 /* RRDouyuTV.app */,
-				CAEA1C5C1DAA6A83008853A5 /* RRDouyuTVTests.xctest */,
-				CAEA1C671DAA6A83008853A5 /* RRDouyuTVUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CAEA1C4A1DAA6A83008853A5 /* RRDouyuTV */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C791DAA6DBB008853A5 /* Classes */,
-				CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */,
-				CAEA1C521DAA6A83008853A5 /* Assets.xcassets */,
-				CAEA1C541DAA6A83008853A5 /* LaunchScreen.storyboard */,
-				CAEA1C571DAA6A83008853A5 /* Info.plist */,
-			);
-			path = RRDouyuTV;
-			sourceTree = "<group>";
-		};
-		CAEA1C5F1DAA6A83008853A5 /* RRDouyuTVTests */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C601DAA6A83008853A5 /* RRDouyuTVTests.swift */,
-				CAEA1C621DAA6A83008853A5 /* Info.plist */,
-			);
-			path = RRDouyuTVTests;
-			sourceTree = "<group>";
-		};
-		CAEA1C6A1DAA6A83008853A5 /* RRDouyuTVUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C6B1DAA6A83008853A5 /* RRDouyuTVUITests.swift */,
-				CAEA1C6D1DAA6A83008853A5 /* Info.plist */,
-			);
-			path = RRDouyuTVUITests;
-			sourceTree = "<group>";
-		};
-		CAEA1C791DAA6DBB008853A5 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C7D1DAA6DBB008853A5 /* Main(主界面) */,
-				CAEA1C7B1DAA6DBB008853A5 /* Home(首页) */,
-				CAEA1C7C1DAA6DBB008853A5 /* Live(直播) */,
-				CAEA1C7A1DAA6DBB008853A5 /* Follow(关注) */,
-				CAEA1C7E1DAA6DBB008853A5 /* Me(我) */,
-				CAEA1C7F1DAA6DBB008853A5 /* Tools(工具) */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		CAEA1C7A1DAA6DBB008853A5 /* Follow(关注) */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C961DAA9312008853A5 /* ViewController */,
-				CAEA1C951DAA9312008853A5 /* View */,
-				CAEA1C941DAA9312008853A5 /* Model */,
-			);
-			path = "Follow(关注)";
-			sourceTree = "<group>";
-		};
-		CAEA1C7B1DAA6DBB008853A5 /* Home(首页) */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C901DAA92F3008853A5 /* ViewController */,
-				CAEA1C8F1DAA92F3008853A5 /* View */,
-				CAEA1C8E1DAA92F3008853A5 /* Model */,
-			);
-			path = "Home(首页)";
-			sourceTree = "<group>";
-		};
-		CAEA1C7C1DAA6DBB008853A5 /* Live(直播) */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C931DAA9302008853A5 /* ViewController */,
-				CAEA1C921DAA9302008853A5 /* View */,
-				CAEA1C911DAA9302008853A5 /* Model */,
-			);
-			path = "Live(直播)";
-			sourceTree = "<group>";
-		};
-		CAEA1C7D1DAA6DBB008853A5 /* Main(主界面) */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C9C1DAA938D008853A5 /* ViewController */,
-				CAEA1C9B1DAA938D008853A5 /* View */,
-				CAEA1C9A1DAA938D008853A5 /* Model */,
-			);
-			path = "Main(主界面)";
-			sourceTree = "<group>";
-		};
-		CAEA1C7E1DAA6DBB008853A5 /* Me(我) */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C991DAA931C008853A5 /* ViewController */,
-				CAEA1C981DAA931C008853A5 /* View */,
-				CAEA1C971DAA931C008853A5 /* Model */,
-			);
-			path = "Me(我)";
-			sourceTree = "<group>";
-		};
-		CAEA1C7F1DAA6DBB008853A5 /* Tools(工具) */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C9F1DAAA615008853A5 /* Extension */,
-				CA1452871DAD1AB900BA39CA /* Common.swift */,
-			);
-			path = "Tools(工具)";
-			sourceTree = "<group>";
-		};
-		CAEA1C8E1DAA92F3008853A5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CAEA1C8F1DAA92F3008853A5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CAEA1C901DAA92F3008853A5 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C821DAA79B9008853A5 /* HomeViewController.storyboard */,
-				CAEA1C9D1DAAA154008853A5 /* HomeViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		CAEA1C911DAA9302008853A5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CAEA1C921DAA9302008853A5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CAEA1C931DAA9302008853A5 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C851DAA79CE008853A5 /* LiveViewController.storyboard */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		CAEA1C941DAA9312008853A5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CAEA1C951DAA9312008853A5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CAEA1C961DAA9312008853A5 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C871DAA79E5008853A5 /* FolloewViewController.storyboard */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		CAEA1C971DAA931C008853A5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CAEA1C981DAA931C008853A5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CAEA1C991DAA931C008853A5 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C8A1DAA79F8008853A5 /* MeViewController.storyboard */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		CAEA1C9A1DAA938D008853A5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CAEA1C9B1DAA938D008853A5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CA1452851DAD180700BA39CA /* PageTitleView.swift */,
-				CAEA030C1DAD3C30001F6704 /* PageContentView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CAEA1C9C1DAA938D008853A5 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1C4F1DAA6A83008853A5 /* Main.storyboard */,
-				CAEA1C8C1DAA8E28008853A5 /* MainViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		CAEA1C9F1DAAA615008853A5 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA1CA01DAAA939008853A5 /* UIBarButtonItem.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		CAEA1C471DAA6A83008853A5 /* RRDouyuTV */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CAEA1C701DAA6A83008853A5 /* Build configuration list for PBXNativeTarget "RRDouyuTV" */;
-			buildPhases = (
-				CAEA1C441DAA6A83008853A5 /* Sources */,
-				CAEA1C451DAA6A83008853A5 /* Frameworks */,
-				CAEA1C461DAA6A83008853A5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RRDouyuTV;
-			productName = RRDouyuTV;
-			productReference = CAEA1C481DAA6A83008853A5 /* RRDouyuTV.app */;
-			productType = "com.apple.product-type.application";
-		};
-		CAEA1C5B1DAA6A83008853A5 /* RRDouyuTVTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CAEA1C731DAA6A83008853A5 /* Build configuration list for PBXNativeTarget "RRDouyuTVTests" */;
-			buildPhases = (
-				CAEA1C581DAA6A83008853A5 /* Sources */,
-				CAEA1C591DAA6A83008853A5 /* Frameworks */,
-				CAEA1C5A1DAA6A83008853A5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CAEA1C5E1DAA6A83008853A5 /* PBXTargetDependency */,
-			);
-			name = RRDouyuTVTests;
-			productName = RRDouyuTVTests;
-			productReference = CAEA1C5C1DAA6A83008853A5 /* RRDouyuTVTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CAEA1C661DAA6A83008853A5 /* RRDouyuTVUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CAEA1C761DAA6A83008853A5 /* Build configuration list for PBXNativeTarget "RRDouyuTVUITests" */;
-			buildPhases = (
-				CAEA1C631DAA6A83008853A5 /* Sources */,
-				CAEA1C641DAA6A83008853A5 /* Frameworks */,
-				CAEA1C651DAA6A83008853A5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CAEA1C691DAA6A83008853A5 /* PBXTargetDependency */,
-			);
-			name = RRDouyuTVUITests;
-			productName = RRDouyuTVUITests;
-			productReference = CAEA1C671DAA6A83008853A5 /* RRDouyuTVUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		CAEA1C401DAA6A83008853A5 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = Rochester;
-				TargetAttributes = {
-					CAEA1C471DAA6A83008853A5 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-					};
-					CAEA1C5B1DAA6A83008853A5 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = CAEA1C471DAA6A83008853A5;
-					};
-					CAEA1C661DAA6A83008853A5 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = CAEA1C471DAA6A83008853A5;
-					};
-				};
-			};
-			buildConfigurationList = CAEA1C431DAA6A83008853A5 /* Build configuration list for PBXProject "RRDouyuTV" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = CAEA1C3F1DAA6A83008853A5;
-			productRefGroup = CAEA1C491DAA6A83008853A5 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				CAEA1C471DAA6A83008853A5 /* RRDouyuTV */,
-				CAEA1C5B1DAA6A83008853A5 /* RRDouyuTVTests */,
-				CAEA1C661DAA6A83008853A5 /* RRDouyuTVUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		CAEA1C461DAA6A83008853A5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CAEA1C891DAA79E5008853A5 /* FolloewViewController.storyboard in Resources */,
-				CAEA1C8B1DAA79F8008853A5 /* MeViewController.storyboard in Resources */,
-				CAEA1C841DAA79B9008853A5 /* HomeViewController.storyboard in Resources */,
-				CAEA1C561DAA6A83008853A5 /* LaunchScreen.storyboard in Resources */,
-				CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */,
-				CAEA1C861DAA79CE008853A5 /* LiveViewController.storyboard in Resources */,
-				CAEA1C511DAA6A83008853A5 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CAEA1C5A1DAA6A83008853A5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CAEA1C651DAA6A83008853A5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		CAEA1C441DAA6A83008853A5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */,
-				CAEA1CA11DAAA939008853A5 /* UIBarButtonItem.swift in Sources */,
-				CA1452861DAD180700BA39CA /* PageTitleView.swift in Sources */,
-				CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */,
-				CAEA1C8D1DAA8E28008853A5 /* MainViewController.swift in Sources */,
-				CA1452881DAD1AB900BA39CA /* Common.swift in Sources */,
-				CAEA1C9E1DAAA154008853A5 /* HomeViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CAEA1C581DAA6A83008853A5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CAEA1C611DAA6A83008853A5 /* RRDouyuTVTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CAEA1C631DAA6A83008853A5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CAEA1C6C1DAA6A83008853A5 /* RRDouyuTVUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CAEA1C5E1DAA6A83008853A5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CAEA1C471DAA6A83008853A5 /* RRDouyuTV */;
-			targetProxy = CAEA1C5D1DAA6A83008853A5 /* PBXContainerItemProxy */;
-		};
-		CAEA1C691DAA6A83008853A5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CAEA1C471DAA6A83008853A5 /* RRDouyuTV */;
-			targetProxy = CAEA1C681DAA6A83008853A5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CAEA1C4F1DAA6A83008853A5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAEA1C501DAA6A83008853A5 /* Base */,
-			);
-			name = Main.storyboard;
-			path = ../../..;
-			sourceTree = "<group>";
-		};
-		CAEA1C541DAA6A83008853A5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAEA1C551DAA6A83008853A5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		CAEA1C821DAA79B9008853A5 /* HomeViewController.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAEA1C831DAA79B9008853A5 /* Base */,
-			);
-			name = HomeViewController.storyboard;
-			path = "../../Main(主界面)";
-			sourceTree = "<group>";
-		};
-		CAEA1C871DAA79E5008853A5 /* FolloewViewController.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAEA1C881DAA79E5008853A5 /* Base */,
-			);
-			name = FolloewViewController.storyboard;
-			path = "../../Main(主界面)";
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		CAEA1C6E1DAA6A83008853A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		CAEA1C6F1DAA6A83008853A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CAEA1C711DAA6A83008853A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = RRDouyuTV/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-rui.RRDouyuTV";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		CAEA1C721DAA6A83008853A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = RRDouyuTV/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-rui.RRDouyuTV";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		CAEA1C741DAA6A83008853A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = RRDouyuTVTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-rui.RRDouyuTVTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RRDouyuTV.app/RRDouyuTV";
-			};
-			name = Debug;
-		};
-		CAEA1C751DAA6A83008853A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = RRDouyuTVTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-rui.RRDouyuTVTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RRDouyuTV.app/RRDouyuTV";
-			};
-			name = Release;
-		};
-		CAEA1C771DAA6A83008853A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = RRDouyuTVUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-rui.RRDouyuTVUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = RRDouyuTV;
-			};
-			name = Debug;
-		};
-		CAEA1C781DAA6A83008853A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = RRDouyuTVUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-rui.RRDouyuTVUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = RRDouyuTV;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		CAEA1C431DAA6A83008853A5 /* Build configuration list for PBXProject "RRDouyuTV" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CAEA1C6E1DAA6A83008853A5 /* Debug */,
-				CAEA1C6F1DAA6A83008853A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CAEA1C701DAA6A83008853A5 /* Build configuration list for PBXNativeTarget "RRDouyuTV" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CAEA1C711DAA6A83008853A5 /* Debug */,
-				CAEA1C721DAA6A83008853A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CAEA1C731DAA6A83008853A5 /* Build configuration list for PBXNativeTarget "RRDouyuTVTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CAEA1C741DAA6A83008853A5 /* Debug */,
-				CAEA1C751DAA6A83008853A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CAEA1C761DAA6A83008853A5 /* Build configuration list for PBXNativeTarget "RRDouyuTVUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CAEA1C771DAA6A83008853A5 /* Debug */,
-				CAEA1C781DAA6A83008853A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = CAEA1C401DAA6A83008853A5 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>172CF6BAD40E1A2234715B36</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_RRDouyuTV.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>366B5554B15783C415686094</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>172CF6BAD40E1A2234715B36</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7076F3E5C7DA295C959A9134</key>
+		<dict>
+			<key>fileRef</key>
+			<string>172CF6BAD40E1A2234715B36</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>771DE9937198AE9EA7109902</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-RRDouyuTV/Pods-RRDouyuTV-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>9A85469A66B08AB22991A5D9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-RRDouyuTV.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-RRDouyuTV/Pods-RRDouyuTV.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9FD92FF75D7E57AF100B7798</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-RRDouyuTV.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-RRDouyuTV/Pods-RRDouyuTV.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A7BC8C8F7FA73512218FFAAF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B52C3409D66BDD86B8341C91</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9FD92FF75D7E57AF100B7798</string>
+				<string>9A85469A66B08AB22991A5D9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BCE137D25865BE8D63F205BB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-RRDouyuTV/Pods-RRDouyuTV-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>CA1452851DAD180700BA39CA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>PageTitleView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CA1452861DAD180700BA39CA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CA1452851DAD180700BA39CA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CA1452871DAD1AB900BA39CA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Common.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CA1452881DAD1AB900BA39CA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CA1452871DAD1AB900BA39CA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA030C1DAD3C30001F6704</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>PageContentView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA030D1DAD3C30001F6704</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA030C1DAD3C30001F6704</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C3F1DAA6A83008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C4A1DAA6A83008853A5</string>
+				<string>CAEA1C5F1DAA6A83008853A5</string>
+				<string>CAEA1C6A1DAA6A83008853A5</string>
+				<string>CAEA1C491DAA6A83008853A5</string>
+				<string>B52C3409D66BDD86B8341C91</string>
+				<string>366B5554B15783C415686094</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C401DAA6A83008853A5</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0800</string>
+				<key>LastUpgradeCheck</key>
+				<string>0800</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Rochester</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>CAEA1C471DAA6A83008853A5</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.0</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+					</dict>
+					<key>CAEA1C5B1DAA6A83008853A5</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.0</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+						<key>TestTargetID</key>
+						<string>CAEA1C471DAA6A83008853A5</string>
+					</dict>
+					<key>CAEA1C661DAA6A83008853A5</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.0</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+						<key>TestTargetID</key>
+						<string>CAEA1C471DAA6A83008853A5</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>CAEA1C431DAA6A83008853A5</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>CAEA1C3F1DAA6A83008853A5</string>
+			<key>productRefGroup</key>
+			<string>CAEA1C491DAA6A83008853A5</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>CAEA1C471DAA6A83008853A5</string>
+				<string>CAEA1C5B1DAA6A83008853A5</string>
+				<string>CAEA1C661DAA6A83008853A5</string>
+			</array>
+		</dict>
+		<key>CAEA1C431DAA6A83008853A5</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CAEA1C6E1DAA6A83008853A5</string>
+				<string>CAEA1C6F1DAA6A83008853A5</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CAEA1C441DAA6A83008853A5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CAEA1C4C1DAA6A83008853A5</string>
+				<string>CAEA1CA11DAAA939008853A5</string>
+				<string>CA1452861DAD180700BA39CA</string>
+				<string>CAEA030D1DAD3C30001F6704</string>
+				<string>CAEA1C8D1DAA8E28008853A5</string>
+				<string>CA1452881DAD1AB900BA39CA</string>
+				<string>CAEA1C9E1DAAA154008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CAEA1C451DAA6A83008853A5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7076F3E5C7DA295C959A9134</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CAEA1C461DAA6A83008853A5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CAEA1C891DAA79E5008853A5</string>
+				<string>CAEA1C8B1DAA79F8008853A5</string>
+				<string>CAEA1C841DAA79B9008853A5</string>
+				<string>CAEA1C561DAA6A83008853A5</string>
+				<string>CAEA1C531DAA6A83008853A5</string>
+				<string>CAEA1C861DAA79CE008853A5</string>
+				<string>CAEA1C511DAA6A83008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CAEA1C471DAA6A83008853A5</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CAEA1C701DAA6A83008853A5</string>
+			<key>buildPhases</key>
+			<array>
+				<string>A7BC8C8F7FA73512218FFAAF</string>
+				<string>CAEA1C441DAA6A83008853A5</string>
+				<string>CAEA1C451DAA6A83008853A5</string>
+				<string>CAEA1C461DAA6A83008853A5</string>
+				<string>771DE9937198AE9EA7109902</string>
+				<string>BCE137D25865BE8D63F205BB</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>RRDouyuTV</string>
+			<key>productName</key>
+			<string>RRDouyuTV</string>
+			<key>productReference</key>
+			<string>CAEA1C481DAA6A83008853A5</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>CAEA1C481DAA6A83008853A5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>RRDouyuTV.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CAEA1C491DAA6A83008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C481DAA6A83008853A5</string>
+				<string>CAEA1C5C1DAA6A83008853A5</string>
+				<string>CAEA1C671DAA6A83008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C4A1DAA6A83008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C791DAA6DBB008853A5</string>
+				<string>CAEA1C4B1DAA6A83008853A5</string>
+				<string>CAEA1C521DAA6A83008853A5</string>
+				<string>CAEA1C541DAA6A83008853A5</string>
+				<string>CAEA1C571DAA6A83008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>RRDouyuTV</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C4B1DAA6A83008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C4C1DAA6A83008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1C4B1DAA6A83008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C4F1DAA6A83008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C501DAA6A83008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>path</key>
+			<string>../../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C501DAA6A83008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C511DAA6A83008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1C4F1DAA6A83008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C521DAA6A83008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C531DAA6A83008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1C521DAA6A83008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C541DAA6A83008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C551DAA6A83008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C551DAA6A83008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C561DAA6A83008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1C541DAA6A83008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C571DAA6A83008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C581DAA6A83008853A5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CAEA1C611DAA6A83008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CAEA1C591DAA6A83008853A5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CAEA1C5A1DAA6A83008853A5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CAEA1C5B1DAA6A83008853A5</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CAEA1C731DAA6A83008853A5</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CAEA1C581DAA6A83008853A5</string>
+				<string>CAEA1C591DAA6A83008853A5</string>
+				<string>CAEA1C5A1DAA6A83008853A5</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>CAEA1C5E1DAA6A83008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>RRDouyuTVTests</string>
+			<key>productName</key>
+			<string>RRDouyuTVTests</string>
+			<key>productReference</key>
+			<string>CAEA1C5C1DAA6A83008853A5</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>CAEA1C5C1DAA6A83008853A5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>RRDouyuTVTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CAEA1C5D1DAA6A83008853A5</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>CAEA1C401DAA6A83008853A5</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>CAEA1C471DAA6A83008853A5</string>
+			<key>remoteInfo</key>
+			<string>RRDouyuTV</string>
+		</dict>
+		<key>CAEA1C5E1DAA6A83008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>CAEA1C471DAA6A83008853A5</string>
+			<key>targetProxy</key>
+			<string>CAEA1C5D1DAA6A83008853A5</string>
+		</dict>
+		<key>CAEA1C5F1DAA6A83008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C601DAA6A83008853A5</string>
+				<string>CAEA1C621DAA6A83008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>RRDouyuTVTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C601DAA6A83008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RRDouyuTVTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C611DAA6A83008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1C601DAA6A83008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C621DAA6A83008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C631DAA6A83008853A5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CAEA1C6C1DAA6A83008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CAEA1C641DAA6A83008853A5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CAEA1C651DAA6A83008853A5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CAEA1C661DAA6A83008853A5</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CAEA1C761DAA6A83008853A5</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CAEA1C631DAA6A83008853A5</string>
+				<string>CAEA1C641DAA6A83008853A5</string>
+				<string>CAEA1C651DAA6A83008853A5</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>CAEA1C691DAA6A83008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>RRDouyuTVUITests</string>
+			<key>productName</key>
+			<string>RRDouyuTVUITests</string>
+			<key>productReference</key>
+			<string>CAEA1C671DAA6A83008853A5</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>CAEA1C671DAA6A83008853A5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>RRDouyuTVUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CAEA1C681DAA6A83008853A5</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>CAEA1C401DAA6A83008853A5</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>CAEA1C471DAA6A83008853A5</string>
+			<key>remoteInfo</key>
+			<string>RRDouyuTV</string>
+		</dict>
+		<key>CAEA1C691DAA6A83008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>CAEA1C471DAA6A83008853A5</string>
+			<key>targetProxy</key>
+			<string>CAEA1C681DAA6A83008853A5</string>
+		</dict>
+		<key>CAEA1C6A1DAA6A83008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C6B1DAA6A83008853A5</string>
+				<string>CAEA1C6D1DAA6A83008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>RRDouyuTVUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C6B1DAA6A83008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RRDouyuTVUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C6C1DAA6A83008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1C6B1DAA6A83008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C6D1DAA6A83008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C6E1DAA6A83008853A5</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
+				<string>DEBUG</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CAEA1C6F1DAA6A83008853A5</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Owholemodule</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CAEA1C701DAA6A83008853A5</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CAEA1C711DAA6A83008853A5</string>
+				<string>CAEA1C721DAA6A83008853A5</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CAEA1C711DAA6A83008853A5</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9FD92FF75D7E57AF100B7798</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>INFOPLIST_FILE</key>
+				<string>RRDouyuTV/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>-rui.RRDouyuTV</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CAEA1C721DAA6A83008853A5</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9A85469A66B08AB22991A5D9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>INFOPLIST_FILE</key>
+				<string>RRDouyuTV/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>-rui.RRDouyuTV</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CAEA1C731DAA6A83008853A5</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CAEA1C741DAA6A83008853A5</string>
+				<string>CAEA1C751DAA6A83008853A5</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CAEA1C741DAA6A83008853A5</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>RRDouyuTVTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>-rui.RRDouyuTVTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/RRDouyuTV.app/RRDouyuTV</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CAEA1C751DAA6A83008853A5</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>RRDouyuTVTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>-rui.RRDouyuTVTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/RRDouyuTV.app/RRDouyuTV</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CAEA1C761DAA6A83008853A5</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CAEA1C771DAA6A83008853A5</string>
+				<string>CAEA1C781DAA6A83008853A5</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CAEA1C771DAA6A83008853A5</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>RRDouyuTVUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>-rui.RRDouyuTVUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>RRDouyuTV</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CAEA1C781DAA6A83008853A5</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>RRDouyuTVUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>-rui.RRDouyuTVUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>RRDouyuTV</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CAEA1C791DAA6DBB008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C7D1DAA6DBB008853A5</string>
+				<string>CAEA1C7B1DAA6DBB008853A5</string>
+				<string>CAEA1C7C1DAA6DBB008853A5</string>
+				<string>CAEA1C7A1DAA6DBB008853A5</string>
+				<string>CAEA1C7E1DAA6DBB008853A5</string>
+				<string>CAEA1C7F1DAA6DBB008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C7A1DAA6DBB008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C961DAA9312008853A5</string>
+				<string>CAEA1C951DAA9312008853A5</string>
+				<string>CAEA1C941DAA9312008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Follow(&#20851;&#27880;)</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C7B1DAA6DBB008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C901DAA92F3008853A5</string>
+				<string>CAEA1C8F1DAA92F3008853A5</string>
+				<string>CAEA1C8E1DAA92F3008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Home(&#39318;&#39029;)</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C7C1DAA6DBB008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C931DAA9302008853A5</string>
+				<string>CAEA1C921DAA9302008853A5</string>
+				<string>CAEA1C911DAA9302008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Live(&#30452;&#25773;)</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C7D1DAA6DBB008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C9C1DAA938D008853A5</string>
+				<string>CAEA1C9B1DAA938D008853A5</string>
+				<string>CAEA1C9A1DAA938D008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Main(&#20027;&#30028;&#38754;)</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C7E1DAA6DBB008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C991DAA931C008853A5</string>
+				<string>CAEA1C981DAA931C008853A5</string>
+				<string>CAEA1C971DAA931C008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Me(&#25105;)</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C7F1DAA6DBB008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C9F1DAAA615008853A5</string>
+				<string>CA1452871DAD1AB900BA39CA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Tools(&#24037;&#20855;)</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C821DAA79B9008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C831DAA79B9008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>HomeViewController.storyboard</string>
+			<key>path</key>
+			<string>../../Main(&#20027;&#30028;&#38754;)</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C831DAA79B9008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>RRDouyuTV/Base.lproj/HomeViewController.storyboard</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>CAEA1C841DAA79B9008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1C821DAA79B9008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C851DAA79CE008853A5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>LiveViewController.storyboard</string>
+			<key>path</key>
+			<string>../../Main(&#20027;&#30028;&#38754;)/LiveViewController.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C861DAA79CE008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1C851DAA79CE008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C871DAA79E5008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C881DAA79E5008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>FolloewViewController.storyboard</string>
+			<key>path</key>
+			<string>../../Main(&#20027;&#30028;&#38754;)</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C881DAA79E5008853A5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>RRDouyuTV/Base.lproj/FolloewViewController.storyboard</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>CAEA1C891DAA79E5008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1C871DAA79E5008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C8A1DAA79F8008853A5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>MeViewController.storyboard</string>
+			<key>path</key>
+			<string>../../Main(&#20027;&#30028;&#38754;)/MeViewController.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C8B1DAA79F8008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1C8A1DAA79F8008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C8C1DAA8E28008853A5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>MainViewController.swift</string>
+			<key>path</key>
+			<string>../MainViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C8D1DAA8E28008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1C8C1DAA8E28008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C8E1DAA92F3008853A5</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C8F1DAA92F3008853A5</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C901DAA92F3008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C821DAA79B9008853A5</string>
+				<string>CAEA1C9D1DAAA154008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C911DAA9302008853A5</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C921DAA9302008853A5</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C931DAA9302008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C851DAA79CE008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C941DAA9312008853A5</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C951DAA9312008853A5</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C961DAA9312008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C871DAA79E5008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C971DAA931C008853A5</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C981DAA931C008853A5</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C991DAA931C008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C8A1DAA79F8008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C9A1DAA938D008853A5</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C9B1DAA938D008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CA1452851DAD180700BA39CA</string>
+				<string>CAEA030C1DAD3C30001F6704</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C9C1DAA938D008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1C4F1DAA6A83008853A5</string>
+				<string>CAEA1C8C1DAA8E28008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C9D1DAAA154008853A5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>HomeViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1C9E1DAAA154008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1C9D1DAAA154008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CAEA1C9F1DAAA615008853A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CAEA1CA01DAAA939008853A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Extension</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1CA01DAAA939008853A5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>UIBarButtonItem.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAEA1CA11DAAA939008853A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAEA1CA01DAAA939008853A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>CAEA1C401DAA6A83008853A5</string>
+</dict>
+</plist>

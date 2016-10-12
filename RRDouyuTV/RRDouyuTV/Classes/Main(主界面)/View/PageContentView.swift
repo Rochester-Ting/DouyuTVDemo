@@ -8,17 +8,17 @@
 
 import UIKit
 protocol PageContentViewDelegate : class {
-    func pageContentView(pageContentView : PageContentView,progress:CGFloat,sourceIndex: Int,targetIndex : Int)
+    func pageContentView(_ pageContentView : PageContentView,progress:CGFloat,sourceIndex: Int,targetIndex : Int)
 }
 private let contentCellId = "contentCellId"
 class PageContentView: UIView {
-    public var childVC : [UIViewController]
-    public var parentVC : UIViewController
-    public var startOffsetX : CGFloat
-    public var isForbidDelegate : Bool = false
+    open var childVC : [UIViewController]
+    open var parentVC : UIViewController
+    open var startOffsetX : CGFloat
+    open var isForbidDelegate : Bool = false
     weak var delegate : PageContentViewDelegate?
     // MARK:- 懒加载collectionView
-    public lazy var collectionView : UICollectionView = {
+    open lazy var collectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = self.bounds.size
         layout.minimumLineSpacing = 0
@@ -116,12 +116,12 @@ extension PageContentView : UICollectionViewDelegate{
                 sourceIndex = childVC.count - 1
             }
         }
-        delegate?.pageContentView(pageContentView:self, progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+        delegate?.pageContentView(self, progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }
 }
 // MARK:- 对外暴露的方法
 extension PageContentView{
-    func setCurrentIndex(currentIndex : Int){
+    func setCurrentIndex(_ currentIndex : Int){
         isForbidDelegate = true
         let offSet = kScreenW * CGFloat(currentIndex)
         collectionView.setContentOffset(CGPoint(x:offSet, y:0), animated: true)

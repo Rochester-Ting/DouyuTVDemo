@@ -10,9 +10,10 @@
 		7076F3E5C7DA295C959A9134 /* Pods_RRDouyuTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172CF6BAD40E1A2234715B36 /* Pods_RRDouyuTV.framework */; };
 		CA1452861DAD180700BA39CA /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1452851DAD180700BA39CA /* PageTitleView.swift */; };
 		CA1452881DAD1AB900BA39CA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1452871DAD1AB900BA39CA /* Common.swift */; };
+		CA82BBF11DAFB85C00FB19D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82BBF01DAFB85C00FB19D8 /* MainViewController.swift */; };
+		CA82BBF41DAFB86700FB19D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA82BBF21DAFB86700FB19D8 /* Main.storyboard */; };
 		CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA030C1DAD3C30001F6704 /* PageContentView.swift */; };
 		CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */; };
-		CAEA1C511DAA6A83008853A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C4F1DAA6A83008853A5 /* Main.storyboard */; };
 		CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C521DAA6A83008853A5 /* Assets.xcassets */; };
 		CAEA1C561DAA6A83008853A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C541DAA6A83008853A5 /* LaunchScreen.storyboard */; };
 		CAEA1C611DAA6A83008853A5 /* RRDouyuTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C601DAA6A83008853A5 /* RRDouyuTVTests.swift */; };
@@ -21,7 +22,6 @@
 		CAEA1C861DAA79CE008853A5 /* LiveViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C851DAA79CE008853A5 /* LiveViewController.storyboard */; };
 		CAEA1C891DAA79E5008853A5 /* FolloewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C871DAA79E5008853A5 /* FolloewViewController.storyboard */; };
 		CAEA1C8B1DAA79F8008853A5 /* MeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C8A1DAA79F8008853A5 /* MeViewController.storyboard */; };
-		CAEA1C8D1DAA8E28008853A5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C8C1DAA8E28008853A5 /* MainViewController.swift */; };
 		CAEA1C9E1DAAA154008853A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C9D1DAAA154008853A5 /* HomeViewController.swift */; };
 		CAEA1CA11DAAA939008853A5 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1CA01DAAA939008853A5 /* UIBarButtonItem.swift */; };
 /* End PBXBuildFile section */
@@ -49,10 +49,11 @@
 		9FD92FF75D7E57AF100B7798 /* Pods-RRDouyuTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RRDouyuTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RRDouyuTV/Pods-RRDouyuTV.debug.xcconfig"; sourceTree = "<group>"; };
 		CA1452851DAD180700BA39CA /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		CA1452871DAD1AB900BA39CA /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		CA82BBF01DAFB85C00FB19D8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "RRDouyuTV/Classes/Main(主界面)/MainViewController.swift"; sourceTree = SOURCE_ROOT; };
+		CA82BBF31DAFB86700FB19D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RRDouyuTV/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		CAEA030C1DAD3C30001F6704 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		CAEA1C481DAA6A83008853A5 /* RRDouyuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRDouyuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAEA1C501DAA6A83008853A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAEA1C521DAA6A83008853A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAEA1C551DAA6A83008853A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAEA1C571DAA6A83008853A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		CAEA1C851DAA79CE008853A5 /* LiveViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LiveViewController.storyboard; path = "../../Main(主界面)/LiveViewController.storyboard"; sourceTree = "<group>"; };
 		CAEA1C881DAA79E5008853A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RRDouyuTV/Base.lproj/FolloewViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		CAEA1C8A1DAA79F8008853A5 /* MeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MeViewController.storyboard; path = "../../Main(主界面)/MeViewController.storyboard"; sourceTree = "<group>"; };
-		CAEA1C8C1DAA8E28008853A5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 		CAEA1C9D1DAAA154008853A5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CAEA1CA01DAAA939008853A5 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -346,8 +346,8 @@
 		CAEA1C9C1DAA938D008853A5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CAEA1C4F1DAA6A83008853A5 /* Main.storyboard */,
-				CAEA1C8C1DAA8E28008853A5 /* MainViewController.swift */,
+				CA82BBF21DAFB86700FB19D8 /* Main.storyboard */,
+				CA82BBF01DAFB85C00FB19D8 /* MainViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -473,13 +473,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA82BBF41DAFB86700FB19D8 /* Main.storyboard in Resources */,
 				CAEA1C891DAA79E5008853A5 /* FolloewViewController.storyboard in Resources */,
 				CAEA1C8B1DAA79F8008853A5 /* MeViewController.storyboard in Resources */,
 				CAEA1C841DAA79B9008853A5 /* HomeViewController.storyboard in Resources */,
 				CAEA1C561DAA6A83008853A5 /* LaunchScreen.storyboard in Resources */,
 				CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */,
 				CAEA1C861DAA79CE008853A5 /* LiveViewController.storyboard in Resources */,
-				CAEA1C511DAA6A83008853A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,11 +552,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA82BBF11DAFB85C00FB19D8 /* MainViewController.swift in Sources */,
 				CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */,
 				CAEA1CA11DAAA939008853A5 /* UIBarButtonItem.swift in Sources */,
 				CA1452861DAD180700BA39CA /* PageTitleView.swift in Sources */,
 				CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */,
-				CAEA1C8D1DAA8E28008853A5 /* MainViewController.swift in Sources */,
 				CA1452881DAD1AB900BA39CA /* Common.swift in Sources */,
 				CAEA1C9E1DAAA154008853A5 /* HomeViewController.swift in Sources */,
 			);
@@ -594,13 +594,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CAEA1C4F1DAA6A83008853A5 /* Main.storyboard */ = {
+		CA82BBF21DAFB86700FB19D8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CAEA1C501DAA6A83008853A5 /* Base */,
+				CA82BBF31DAFB86700FB19D8 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../../..;
 			sourceTree = "<group>";
 		};
 		CAEA1C541DAA6A83008853A5 /* LaunchScreen.storyboard */ = {

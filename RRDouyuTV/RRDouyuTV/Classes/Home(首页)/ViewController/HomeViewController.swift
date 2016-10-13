@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let kTitleViewH : CGFloat = 40;
+
 class HomeViewController: UIViewController {
     // MARK:- 懒加载PageTitleView
     open lazy var pageTitleView : PageTitleView = {[weak self] in
@@ -24,7 +24,9 @@ class HomeViewController: UIViewController {
         let pageContentViewFrame = CGRect(x: 0, y: kNavigationH + kStatusBarH + kTitleViewH, width: kScreenW, height: contentH)
         // 创建一个可变数组保存childVC
         var childVC : [UIViewController] = [UIViewController]()
-        for _ in 0..<4 {
+        let recommandVC  = RecommandVC()
+        childVC.append(recommandVC)
+        for _ in 0..<3 {
             let vc = UIViewController()
             // MARK:- 设置vc的背景颜色
             vc.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(255)) / 255.0, green: CGFloat(arc4random_uniform(255)) / 255.0, blue: CGFloat(arc4random_uniform(255)) / 255.0, alpha: 1)

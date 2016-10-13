@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecommandNormalCell" customModule="RRDouyuTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="252" height="164"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="oEy-ta-6YB">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="cmr-vK-s9Z"/>
+                            <constraint firstAttribute="height" constant="14" id="fw9-hw-8gn"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="njC-oj-KvC"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="瑞哥好帅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdJ-Wu-jVw">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="瑞哥好帅啊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAT-zW-3Fk">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-vo-UHl">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="9万人观看" image="Image_online"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="cdJ-Wu-jVw" firstAttribute="leading" secondItem="oEy-ta-6YB" secondAttribute="trailing" constant="5" id="1XI-C8-MqG"/>
+                <constraint firstItem="kAT-zW-3Fk" firstAttribute="leading" secondItem="njC-oj-KvC" secondAttribute="leading" constant="5" id="35f-CU-1gg"/>
+                <constraint firstItem="oEy-ta-6YB" firstAttribute="top" secondItem="njC-oj-KvC" secondAttribute="bottom" constant="5" id="52O-Mx-SpR"/>
+                <constraint firstItem="DiS-vo-UHl" firstAttribute="bottom" secondItem="njC-oj-KvC" secondAttribute="bottom" constant="-5" id="8o3-hp-WZt"/>
+                <constraint firstItem="njC-oj-KvC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AWZ-Bb-oyr"/>
+                <constraint firstItem="cdJ-Wu-jVw" firstAttribute="centerY" secondItem="oEy-ta-6YB" secondAttribute="centerY" id="DAe-xx-ZuF"/>
+                <constraint firstItem="njC-oj-KvC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Fel-UP-BrN"/>
+                <constraint firstItem="oEy-ta-6YB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FgT-ey-IB2"/>
+                <constraint firstItem="kAT-zW-3Fk" firstAttribute="bottom" secondItem="njC-oj-KvC" secondAttribute="bottom" constant="-5" id="Tux-b5-5S9"/>
+                <constraint firstAttribute="trailing" secondItem="njC-oj-KvC" secondAttribute="trailing" id="UjL-jQ-b0M"/>
+                <constraint firstAttribute="trailing" secondItem="cdJ-Wu-jVw" secondAttribute="trailing" id="WfK-oY-MxC"/>
+                <constraint firstAttribute="bottom" secondItem="oEy-ta-6YB" secondAttribute="bottom" constant="10" id="hrl-AT-wAp"/>
+                <constraint firstItem="DiS-vo-UHl" firstAttribute="trailing" secondItem="njC-oj-KvC" secondAttribute="trailing" constant="-5" id="p4N-h6-kXY"/>
+            </constraints>
+            <size key="customSize" width="252" height="164"/>
+            <connections>
+                <outlet property="actorNameLabel" destination="cdJ-Wu-jVw" id="0pa-If-UNL"/>
+                <outlet property="backImage" destination="njC-oj-KvC" id="GHI-QI-A6K"/>
+                <outlet property="onlineNum" destination="DiS-vo-UHl" id="sSg-Yx-4LD"/>
+                <outlet property="roomNameLabel" destination="kAT-zW-3Fk" id="R0s-fW-PWC"/>
+            </connections>
+            <point key="canvasLocation" x="-23" y="-2"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image_online" width="16" height="16"/>
+        <image name="home_live_cate_normal" width="14" height="14"/>
+        <image name="live_cell_default_phone" width="103" height="103"/>
+    </resources>
+</document>

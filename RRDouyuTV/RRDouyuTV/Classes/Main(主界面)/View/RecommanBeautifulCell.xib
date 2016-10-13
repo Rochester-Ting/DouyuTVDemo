@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecommanBeautifulCell" customModule="RRDouyuTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="181" height="196"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="181" height="196"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_location" translatesAutoresizingMaskIntoConstraints="NO" id="8He-5r-yy9">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="4qF-AM-yFr"/>
+                            <constraint firstAttribute="width" constant="12" id="tQU-vc-h1r"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KZ-P6-ngN">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rui" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g2-5P-vuE">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="iDW-Ad-cgw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="n6L-lY-RaQ"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zp8-TF-ASs">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.1962823275862069" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="6666在线"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Zp8-TF-ASs" secondAttribute="trailing" constant="5" id="0r9-c3-2HE"/>
+                <constraint firstItem="5g2-5P-vuE" firstAttribute="top" secondItem="n6L-lY-RaQ" secondAttribute="bottom" constant="5" id="6xq-Vz-o9O"/>
+                <constraint firstItem="n6L-lY-RaQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="72u-Oy-TLm"/>
+                <constraint firstItem="7KZ-P6-ngN" firstAttribute="leading" secondItem="8He-5r-yy9" secondAttribute="trailing" id="AlH-Yq-nKt"/>
+                <constraint firstItem="Zp8-TF-ASs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="LM9-g6-QHD"/>
+                <constraint firstItem="7KZ-P6-ngN" firstAttribute="centerY" secondItem="8He-5r-yy9" secondAttribute="centerY" id="NVp-Gk-NaO"/>
+                <constraint firstItem="5g2-5P-vuE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qte-th-XCV"/>
+                <constraint firstItem="n6L-lY-RaQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XbL-4h-Ib4"/>
+                <constraint firstAttribute="trailing" secondItem="n6L-lY-RaQ" secondAttribute="trailing" id="eN4-A8-BDW"/>
+                <constraint firstItem="8He-5r-yy9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="giV-6Q-pLh"/>
+                <constraint firstAttribute="bottom" secondItem="8He-5r-yy9" secondAttribute="bottom" constant="10" id="qCp-DB-8Up"/>
+                <constraint firstItem="7KZ-P6-ngN" firstAttribute="top" secondItem="5g2-5P-vuE" secondAttribute="bottom" constant="5" id="tC1-ps-nmv"/>
+            </constraints>
+            <size key="customSize" width="181" height="196"/>
+            <connections>
+                <outlet property="actorNameLabel" destination="5g2-5P-vuE" id="Gha-ng-dBx"/>
+                <outlet property="backImage" destination="n6L-lY-RaQ" id="6U5-S0-I0K"/>
+                <outlet property="location" destination="7KZ-P6-ngN" id="pHq-YM-DjP"/>
+                <outlet property="onlineNum" destination="Zp8-TF-ASs" id="jx3-UN-mMe"/>
+            </connections>
+            <point key="canvasLocation" x="99.5" y="127"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172" height="103"/>
+        <image name="ico_location" width="12" height="12"/>
+    </resources>
+</document>

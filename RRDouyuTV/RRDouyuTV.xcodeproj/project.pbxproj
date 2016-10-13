@@ -12,6 +12,15 @@
 		CA1452881DAD1AB900BA39CA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1452871DAD1AB900BA39CA /* Common.swift */; };
 		CA82BBF11DAFB85C00FB19D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82BBF01DAFB85C00FB19D8 /* MainViewController.swift */; };
 		CA82BBF41DAFB86700FB19D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA82BBF21DAFB86700FB19D8 /* Main.storyboard */; };
+		CA82BBF61DAFBCF600FB19D8 /* RecommandVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82BBF51DAFBCF600FB19D8 /* RecommandVC.swift */; };
+		CA82BBF91DAFCCF500FB19D8 /* RecommandNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82BBF71DAFCCF500FB19D8 /* RecommandNormalCell.swift */; };
+		CA82BBFA1DAFCCF500FB19D8 /* RecommandNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA82BBF81DAFCCF500FB19D8 /* RecommandNormalCell.xib */; };
+		CA82BBFD1DAFCD0F00FB19D8 /* RecommanBeautifulCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82BBFB1DAFCD0F00FB19D8 /* RecommanBeautifulCell.swift */; };
+		CA82BBFE1DAFCD0F00FB19D8 /* RecommanBeautifulCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA82BBFC1DAFCD0F00FB19D8 /* RecommanBeautifulCell.xib */; };
+		CA82BC011DAFCDFD00FB19D8 /* RecommandHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82BBFF1DAFCDFD00FB19D8 /* RecommandHeadView.swift */; };
+		CA82BC021DAFCDFD00FB19D8 /* RecommandHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA82BC001DAFCDFD00FB19D8 /* RecommandHeadView.xib */; };
+		CA82BC051DAFDFD000FB19D8 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82BC041DAFDFD000FB19D8 /* NetworkTools.swift */; };
+		CA82BC071DAFE7EF00FB19D8 /* RecommandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82BC061DAFE7EF00FB19D8 /* RecommandViewModel.swift */; };
 		CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA030C1DAD3C30001F6704 /* PageContentView.swift */; };
 		CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */; };
 		CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C521DAA6A83008853A5 /* Assets.xcassets */; };
@@ -51,6 +60,15 @@
 		CA1452871DAD1AB900BA39CA /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		CA82BBF01DAFB85C00FB19D8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "RRDouyuTV/Classes/Main(主界面)/MainViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CA82BBF31DAFB86700FB19D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RRDouyuTV/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		CA82BBF51DAFBCF600FB19D8 /* RecommandVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommandVC.swift; sourceTree = "<group>"; };
+		CA82BBF71DAFCCF500FB19D8 /* RecommandNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommandNormalCell.swift; sourceTree = "<group>"; };
+		CA82BBF81DAFCCF500FB19D8 /* RecommandNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommandNormalCell.xib; sourceTree = "<group>"; };
+		CA82BBFB1DAFCD0F00FB19D8 /* RecommanBeautifulCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommanBeautifulCell.swift; sourceTree = "<group>"; };
+		CA82BBFC1DAFCD0F00FB19D8 /* RecommanBeautifulCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommanBeautifulCell.xib; sourceTree = "<group>"; };
+		CA82BBFF1DAFCDFD00FB19D8 /* RecommandHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecommandHeadView.swift; path = "RRDouyuTV/Classes/Main(主界面)/View/RecommandHeadView.swift"; sourceTree = SOURCE_ROOT; };
+		CA82BC001DAFCDFD00FB19D8 /* RecommandHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RecommandHeadView.xib; path = "RRDouyuTV/Classes/Main(主界面)/View/RecommandHeadView.xib"; sourceTree = SOURCE_ROOT; };
+		CA82BC041DAFDFD000FB19D8 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		CA82BC061DAFE7EF00FB19D8 /* RecommandViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommandViewModel.swift; sourceTree = "<group>"; };
 		CAEA030C1DAD3C30001F6704 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		CAEA1C481DAA6A83008853A5 /* RRDouyuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRDouyuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +130,14 @@
 				9A85469A66B08AB22991A5D9 /* Pods-RRDouyuTV.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA82BC031DAFDF7000FB19D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA82BC061DAFE7EF00FB19D8 /* RecommandViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		CAEA1C3F1DAA6A83008853A5 = {
@@ -195,6 +221,7 @@
 				CAEA1C901DAA92F3008853A5 /* ViewController */,
 				CAEA1C8F1DAA92F3008853A5 /* View */,
 				CAEA1C8E1DAA92F3008853A5 /* Model */,
+				CA82BC031DAFDF7000FB19D8 /* ViewModel */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -234,6 +261,7 @@
 			children = (
 				CAEA1C9F1DAAA615008853A5 /* Extension */,
 				CA1452871DAD1AB900BA39CA /* Common.swift */,
+				CA82BC041DAFDFD000FB19D8 /* NetworkTools.swift */,
 			);
 			path = "Tools(工具)";
 			sourceTree = "<group>";
@@ -248,6 +276,8 @@
 		CAEA1C8F1DAA92F3008853A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA82BBFF1DAFCDFD00FB19D8 /* RecommandHeadView.swift */,
+				CA82BC001DAFCDFD00FB19D8 /* RecommandHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +287,7 @@
 			children = (
 				CAEA1C821DAA79B9008853A5 /* HomeViewController.storyboard */,
 				CAEA1C9D1DAAA154008853A5 /* HomeViewController.swift */,
+				CA82BBF51DAFBCF600FB19D8 /* RecommandVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -339,6 +370,10 @@
 			children = (
 				CA1452851DAD180700BA39CA /* PageTitleView.swift */,
 				CAEA030C1DAD3C30001F6704 /* PageContentView.swift */,
+				CA82BBF71DAFCCF500FB19D8 /* RecommandNormalCell.swift */,
+				CA82BBF81DAFCCF500FB19D8 /* RecommandNormalCell.xib */,
+				CA82BBFB1DAFCD0F00FB19D8 /* RecommanBeautifulCell.swift */,
+				CA82BBFC1DAFCD0F00FB19D8 /* RecommanBeautifulCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,6 +466,7 @@
 				TargetAttributes = {
 					CAEA1C471DAA6A83008853A5 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = G6LS2YP65V;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -475,11 +511,14 @@
 			files = (
 				CA82BBF41DAFB86700FB19D8 /* Main.storyboard in Resources */,
 				CAEA1C891DAA79E5008853A5 /* FolloewViewController.storyboard in Resources */,
+				CA82BBFE1DAFCD0F00FB19D8 /* RecommanBeautifulCell.xib in Resources */,
 				CAEA1C8B1DAA79F8008853A5 /* MeViewController.storyboard in Resources */,
 				CAEA1C841DAA79B9008853A5 /* HomeViewController.storyboard in Resources */,
 				CAEA1C561DAA6A83008853A5 /* LaunchScreen.storyboard in Resources */,
 				CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */,
+				CA82BC021DAFCDFD00FB19D8 /* RecommandHeadView.xib in Resources */,
 				CAEA1C861DAA79CE008853A5 /* LiveViewController.storyboard in Resources */,
+				CA82BBFA1DAFCCF500FB19D8 /* RecommandNormalCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,10 +591,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA82BC071DAFE7EF00FB19D8 /* RecommandViewModel.swift in Sources */,
 				CA82BBF11DAFB85C00FB19D8 /* MainViewController.swift in Sources */,
 				CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */,
+				CA82BC011DAFCDFD00FB19D8 /* RecommandHeadView.swift in Sources */,
 				CAEA1CA11DAAA939008853A5 /* UIBarButtonItem.swift in Sources */,
+				CA82BBF61DAFBCF600FB19D8 /* RecommandVC.swift in Sources */,
+				CA82BBF91DAFCCF500FB19D8 /* RecommandNormalCell.swift in Sources */,
+				CA82BBFD1DAFCD0F00FB19D8 /* RecommanBeautifulCell.swift in Sources */,
 				CA1452861DAD180700BA39CA /* PageTitleView.swift in Sources */,
+				CA82BC051DAFDFD000FB19D8 /* NetworkTools.swift in Sources */,
 				CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */,
 				CA1452881DAD1AB900BA39CA /* Common.swift in Sources */,
 				CAEA1C9E1DAAA154008853A5 /* HomeViewController.swift in Sources */,
@@ -728,10 +773,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = G6LS2YP65V;
 				INFOPLIST_FILE = RRDouyuTV/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-rui.RRDouyuTV";
+				PRODUCT_BUNDLE_IDENTIFIER = "-rui.RRDouyuTVs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -743,10 +789,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = G6LS2YP65V;
 				INFOPLIST_FILE = RRDouyuTV/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-rui.RRDouyuTV";
+				PRODUCT_BUNDLE_IDENTIFIER = "-rui.RRDouyuTVs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -9,10 +9,19 @@
 import UIKit
 
 class RecommandHeadView: UICollectionReusableView {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    @IBOutlet weak var image: UIImageView!
+    
+    @IBOutlet weak var tag_name: UILabel!
+    
+    var achorGame : RGameModel? {
+        didSet{
+            guard let achorGame = achorGame else {
+                return
+            }
+            self.image.image = UIImage(named: achorGame.icon_name)
+            self.tag_name.text = achorGame.tag_name
+        }
     }
     
 }

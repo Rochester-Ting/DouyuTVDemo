@@ -7,8 +7,9 @@
 //
 
 import UIKit
-
+import Kingfisher
 class RecommanBeautifulCell: UICollectionViewCell {
+    
     // MARK:- 主播名字
     @IBOutlet weak var actorNameLabel: UILabel!
     // MARK:- 主播定位
@@ -24,6 +25,31 @@ class RecommanBeautifulCell: UICollectionViewCell {
         onlineNum.layer.cornerRadius = 3
         backImage.clipsToBounds = true
         onlineNum.clipsToBounds = true
+    }
+    var achor : RAchorModel? {
+        didSet {
+            self.actorNameLabel.text = achor?.nickname
+            self.location.text = achor?.anchor_city
+            guard let vertical_src = achor?.vertical_src else {
+                return
+            }
+            guard let url = URL(string: vertical_src) else {
+                return
+            }
+            self.backImage.kf.setImage(with: url)
+            
+            guard let number = achor?.online else {
+                return
+            }
+            var onlineNUm : String = ""
+            if number > 10000 {
+                let n = number / 10000
+                onlineNUm = "\(n)万人在线"
+            }else{
+                onlineNUm = "\(number)人在线"
+            }
+            self.onlineNum.setTitle(onlineNUm, for: .normal)
+        }
     }
 
 }

@@ -18,7 +18,30 @@ private let kRecommandSectionHeadId = "recommadSectionId"
 // sectionHead的高度
 private let kHeadViewH : CGFloat = 50
 class RecommandVC: UIViewController {
-
+    lazy var recommandVM : RecommandViewModel = RecommandViewModel()
+    lazy var collectionView : UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: kItemWidth, height: kItemHeight)
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = kItemMargin
+        layout.scrollDirection = .vertical
+        layout.headerReferenceSize = CGSize(width: kScreenW, height: kHeadViewH)
+        layout.sectionInset = UIEdgeInsetsMake(0, kItemMargin, 0, kItemMargin)
+        
+        let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
+        collectionView.contentInset = UIEdgeInsetsMake(0, 0, kStatusBarH + kNavigationH + kTitleViewH + kTabBarH, 0)
+        self.collectionView = collectionView;
+        collectionView.backgroundColor = UIColor.white
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        // MARK:- 注册Normal cell
+        collectionView.register(UINib(nibName: "RecommandNormalCell", bundle: nil), forCellWithReuseIdentifier: kRecommandCellId)
+        // MARK:- 注册颜值cell
+        collectionView.register(UINib(nibName: "RecommanBeautifulCell", bundle: nil), forCellWithReuseIdentifier: kRecommandBeatifulCellId)
+        // MARK:- 注册headView
+        collectionView.register(UINib(nibName: "RecommandHeadView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kRecommandSectionHeadId)
+        return collectionView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         automaticallyAdjustsScrollViewInsets = false
@@ -42,26 +65,7 @@ extension RecommandVC{
     }
     // MARK:- 设置collectionView
     public func addCollectionView(){
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: kItemWidth, height: kItemHeight)
-        layout.minimumLineSpacing = 0
-        layout.minimumInteritemSpacing = kItemMargin
-        layout.scrollDirection = .vertical
-        layout.headerReferenceSize = CGSize(width: kScreenW, height: kHeadViewH)
-        layout.sectionInset = UIEdgeInsetsMake(0, kItemMargin, 0, kItemMargin)
         
-        let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
-        collectionView.contentInset = UIEdgeInsetsMake(0, 0, kStatusBarH + kNavigationH + kTitleViewH + kTabBarH, 0)
-        
-        collectionView.backgroundColor = UIColor.white
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        // MARK:- 注册Normal cell
-        collectionView.register(UINib(nibName: "RecommandNormalCell", bundle: nil), forCellWithReuseIdentifier: kRecommandCellId)
-        // MARK:- 注册颜值cell
-        collectionView.register(UINib(nibName: "RecommanBeautifulCell", bundle: nil), forCellWithReuseIdentifier: kRecommandBeatifulCellId)
-        // MARK:- 注册headView
-        collectionView.register(UINib(nibName: "RecommandHeadView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kRecommandSectionHeadId)
         view.addSubview(collectionView)
     }
 }
@@ -69,29 +73,34 @@ extension RecommandVC{
 extension RecommandVC : UICollectionViewDataSource{
     // 返回几组
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        
+        return recommandVM.rGameModelArrs.count
     }
     // 返回每组有几个
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
-        return 4
+        let num = recommandVM.rGameModelArrs[section]
+        
+        return num.anchors.count
     }
     // 返回cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell = UICollectionViewCell()
+        
         if indexPath.section == 1{
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kRecommandBeatifulCellId, for: indexPath)
+            let cell : RecommanBeautifulCell = collectionView.dequeueReusableCell(withReuseIdentifier: kRecommandBeatifulCellId, for: indexPath) as! RecommanBeautifulCell
+            cell.achor = recommandVM.rGameModelArrs[(indexPath as NSIndexPath).section].anchors[(indexPath as NSIndexPath).item]
+            return cell
         }else{
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kRecommandCellId, for: indexPath)
+            let cell : RecommandNormalCell = collectionView.dequeueReusableCell(withReuseIdentifier: kRecommandCellId, for: indexPath) as! RecommandNormalCell
+            cell.achor = recommandVM.rGameModelArrs[(indexPath as NSIndexPath).section].anchors[(indexPath as NSIndexPath).item]
+            return cell
         }
-        return cell
+        
     }
     // 返回collectionView的headView
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headview = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kRecommandSectionHeadId, for: indexPath)
+        let headview = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kRecommandSectionHeadId, for: indexPath) as! RecommandHeadView
 //        headview.backgroundColor = UIColor.green
+        headview.achorGame = recommandVM.rGameModelArrs[indexPath.section];
         return headview
     }
 }
@@ -108,7 +117,9 @@ extension RecommandVC : UICollectionViewDelegateFlowLayout{
 // MARK:- 获取网络数据
 extension RecommandVC{
     func GetNetwork() {
-        RecommandViewModel.requestHomeData()
+        recommandVM.requestHomeData { 
+            self.collectionView.reloadData()
+        }
     }
 }
 

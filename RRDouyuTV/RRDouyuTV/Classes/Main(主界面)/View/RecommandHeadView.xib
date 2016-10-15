@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recommadSectionId" id="U6b-Vx-4bR">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recommadSectionId" id="U6b-Vx-4bR" customClass="RecommandHeadView" customModule="RRDouyuTV" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
@@ -50,6 +50,10 @@
                 <constraint firstItem="1iF-EX-VBA" firstAttribute="centerY" secondItem="LRw-b9-2bT" secondAttribute="centerY" id="uh6-Pc-62a"/>
                 <constraint firstItem="uiT-Ug-Frb" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="zKI-XO-COQ"/>
             </constraints>
+            <connections>
+                <outlet property="image" destination="uiT-Ug-Frb" id="luv-Ml-xSE"/>
+                <outlet property="tag_name" destination="LRw-b9-2bT" id="ptJ-cO-XnO"/>
+            </connections>
             <point key="canvasLocation" x="36" y="54"/>
         </collectionReusableView>
     </objects>

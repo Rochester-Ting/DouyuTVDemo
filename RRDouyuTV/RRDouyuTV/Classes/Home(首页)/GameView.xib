@@ -19,6 +19,10 @@
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="ytx-jc-JbA"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="3xS-xW-85N"/>
+                    </connections>
                 </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="0.86769042380000005" blue="0.60135588870000001" alpha="1" colorSpace="calibratedRGB"/>

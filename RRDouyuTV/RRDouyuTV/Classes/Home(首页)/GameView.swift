@@ -8,14 +8,28 @@
 
 import UIKit
 fileprivate let kgameCellId = "kgameCellId"
+fileprivate let kItemSize = 70
+fileprivate let kMargin = 10
 class GameView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
+    var gameArrs : [RGameModel]?{
+        didSet {
+            gameArrs?.removeFirst()
+            gameArrs?.removeFirst()
+            let gameModel : RGameModel = RGameModel()
+            gameModel.icon_name = "home_more_btn"
+            gameModel.tag_name = "更多"
+            gameArrs?.append(gameModel)
+            collectionView.reloadData()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = UIColor.red
-        collectionView.dataSource = self
-//        collectionView.delegate = self
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kgameCellId)
+        collectionView.register(UINib(nibName: "GameViewCell", bundle: nil), forCellWithReuseIdentifier: kgameCellId)
+        collectionView.contentInset = UIEdgeInsetsMake(0, CGFloat(kMargin), 0, CGFloat(kMargin))
+        collectionView.showsHorizontalScrollIndicator = false
+        
     }
     class func gameView()->GameView{
         return Bundle.main.loadNibNamed("GameView", owner: nil, options: nil)?.first as! GameView
@@ -23,9 +37,9 @@ class GameView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width: kGameViewH, height: kGameViewH)
-        layout.minimumLineSpacing = 10
-        layout.minimumInteritemSpacing = 10
+        layout.itemSize = CGSize(width: kItemSize, height: kItemSize)
+        layout.minimumLineSpacing = CGFloat(kMargin)
+        layout.minimumInteritemSpacing = CGFloat(kMargin)
         layout.scrollDirection = .horizontal
     }
 }
@@ -35,11 +49,12 @@ extension GameView : UICollectionViewDelegate{
 
 extension GameView : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return gameArrs?.count ?? 0
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kgameCellId, for: indexPath)
-        cell.backgroundColor = indexPath.item % 2 == 0 ? UIColor.red : UIColor.green
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kgameCellId, for: indexPath) as! GameViewCell
+    
+        cell.gameModel = gameArrs![indexPath.item]
         return cell
     }
 }

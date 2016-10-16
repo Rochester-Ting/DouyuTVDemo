@@ -30,6 +30,8 @@
 		CADA57EA1DB3BD5100D2D801 /* CycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADA57E81DB3BD5100D2D801 /* CycleCell.xib */; };
 		CADA57EC1DB3D35700D2D801 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57EB1DB3D35700D2D801 /* GameView.swift */; };
 		CADA57EE1DB3D36100D2D801 /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADA57ED1DB3D36100D2D801 /* GameView.xib */; };
+		CADA57F11DB3DA7D00D2D801 /* GameViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57EF1DB3DA7D00D2D801 /* GameViewCell.swift */; };
+		CADA57F21DB3DA7D00D2D801 /* GameViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADA57F01DB3DA7D00D2D801 /* GameViewCell.xib */; };
 		CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA030C1DAD3C30001F6704 /* PageContentView.swift */; };
 		CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */; };
 		CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C521DAA6A83008853A5 /* Assets.xcassets */; };
@@ -87,6 +89,8 @@
 		CADA57E81DB3BD5100D2D801 /* CycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CycleCell.xib; path = "RRDouyuTV/Classes/Home(首页)/CycleCell.xib"; sourceTree = SOURCE_ROOT; };
 		CADA57EB1DB3D35700D2D801 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameView.swift; path = "RRDouyuTV/Classes/Home(首页)/GameView.swift"; sourceTree = SOURCE_ROOT; };
 		CADA57ED1DB3D36100D2D801 /* GameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameView.xib; path = "RRDouyuTV/Classes/Home(首页)/GameView.xib"; sourceTree = SOURCE_ROOT; };
+		CADA57EF1DB3DA7D00D2D801 /* GameViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewCell.swift; path = "RRDouyuTV/Classes/Home(首页)/GameViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		CADA57F01DB3DA7D00D2D801 /* GameViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameViewCell.xib; path = "RRDouyuTV/Classes/Home(首页)/GameViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		CAEA030C1DAD3C30001F6704 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		CAEA1C481DAA6A83008853A5 /* RRDouyuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRDouyuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -303,6 +307,8 @@
 				CADA57E81DB3BD5100D2D801 /* CycleCell.xib */,
 				CADA57EB1DB3D35700D2D801 /* GameView.swift */,
 				CADA57ED1DB3D36100D2D801 /* GameView.xib */,
+				CADA57EF1DB3DA7D00D2D801 /* GameViewCell.swift */,
+				CADA57F01DB3DA7D00D2D801 /* GameViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -536,6 +542,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CADA57F21DB3DA7D00D2D801 /* GameViewCell.xib in Resources */,
 				CA82BBF41DAFB86700FB19D8 /* Main.storyboard in Resources */,
 				CAEA1C891DAA79E5008853A5 /* FolloewViewController.storyboard in Resources */,
 				CADA57EE1DB3D36100D2D801 /* GameView.xib in Resources */,
@@ -631,6 +638,7 @@
 				CA4AD8161DB1FBBF008DC0F2 /* RGameModel.swift in Sources */,
 				CA82BBF91DAFCCF500FB19D8 /* RecommandNormalCell.swift in Sources */,
 				CA82BBFD1DAFCD0F00FB19D8 /* RecommanBeautifulCell.swift in Sources */,
+				CADA57F11DB3DA7D00D2D801 /* GameViewCell.swift in Sources */,
 				CA1452861DAD180700BA39CA /* PageTitleView.swift in Sources */,
 				CA82BC051DAFDFD000FB19D8 /* NetworkTools.swift in Sources */,
 				CADA57E41DB3B6BE00D2D801 /* CycleView.swift in Sources */,

@@ -18,6 +18,8 @@ private let kRecommandSectionHeadId = "recommadSectionId"
 // sectionHead的高度
 private let kHeadViewH : CGFloat = 50
 class RecommandVC: UIViewController {
+    
+    var gameView : GameView?
     lazy var recommandVM : RecommandViewModel = RecommandViewModel()
     lazy var collectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -123,6 +125,7 @@ extension RecommandVC{
     func GetNetwork() {
         recommandVM.requestHomeData { 
             self.collectionView.reloadData()
+            self.gameView?.gameArrs = self.recommandVM.rGameModelArrs
         }
     }
 }
@@ -139,7 +142,8 @@ extension RecommandVC{
     func addGameView(){
         let gameView = GameView.gameView()
         gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
-        view.addSubview(gameView)
+        self.gameView = gameView
+        collectionView.addSubview(gameView)
     }
 }
 

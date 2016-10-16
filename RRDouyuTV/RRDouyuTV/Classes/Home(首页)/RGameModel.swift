@@ -22,7 +22,9 @@ class RGameModel: NSObject {
     var tag_name : String = ""
     // 组显示的图标
     var icon_name : String = "home_header_normal"
-
+    /// 游戏对应的图标
+    var icon_url : String = ""
+    
     // 定义一个主播的模型对象
     var anchors : [RAchorModel] = [RAchorModel]()
     init(dict : [String : NSObject]) {

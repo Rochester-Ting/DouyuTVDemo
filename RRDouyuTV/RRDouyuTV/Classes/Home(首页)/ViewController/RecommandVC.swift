@@ -53,6 +53,8 @@ class RecommandVC: UIViewController {
         GetNetwork()
         //添加轮播图
         addCycleView()
+        //推荐游戏
+        addGameView()
     }
 
     override func didReceiveMemoryWarning() {

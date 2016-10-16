@@ -29,7 +29,7 @@ class RecommandVC: UIViewController {
         layout.sectionInset = UIEdgeInsetsMake(0, kItemMargin, 0, kItemMargin)
         
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
-        collectionView.contentInset = UIEdgeInsetsMake(kClycleH, 0, kStatusBarH + kNavigationH + kTitleViewH + kTabBarH, 0)
+        collectionView.contentInset = UIEdgeInsetsMake(kClycleH + kGameViewH, 0, kStatusBarH + kNavigationH + kTitleViewH + kTabBarH, 0)
         self.collectionView = collectionView;
         collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
@@ -128,9 +128,16 @@ extension RecommandVC{
 extension RecommandVC{
     func addCycleView(){
         let cycleView = CycleView.cycleView()
-        cycleView.frame = CGRect(x: 0, y: -kClycleH, width: kScreenW, height: kClycleH)
+        cycleView.frame = CGRect(x: 0, y: -(kClycleH + kGameViewH), width: kScreenW, height: kClycleH)
         collectionView.addSubview(cycleView)
     }
 }
-
+// MARK:- 添加GameView
+extension RecommandVC{
+    func addGameView(){
+        let gameView = GameView.gameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        view.addSubview(gameView)
+    }
+}
 

@@ -14,7 +14,8 @@ class RecommandViewModel{
     // MARK:- 设置热门和颜值的
     lazy var rHotAchor : RGameModel = RGameModel()
     lazy var rBeautiAchor : RGameModel = RGameModel()
-    
+    // MARK:- 存储轮播图对象的数组
+    lazy var cycleArr : [CycleModel] = [CycleModel]()
     
 }
 
@@ -91,6 +92,22 @@ extension RecommandViewModel{
         
 //        finishied()finishied
         
+    }
+    // MARK:- 获取首页轮播图
+    func requestCycle(finished:@escaping ()->()) {
+        NetworkTools.requestData(type: .GET, urlString: "http://www.douyutv.com/api/v1/slide/6", paramters: ["version" : "2.300"]) { (resultCycle) in
+            // 转成字典
+            guard let dict = resultCycle as? [String : NSObject] else {return}
+            // 获取需要的数据
+            guard let dataArray = dict["data"] as? [[String : NSObject]] else{return}
+//            print(dataArray)
+            // 转字典
+            for dict in dataArray{
+                self.cycleArr.append(CycleModel(dict: dict))
+            }
+            // 转成以后回调
+            finished()
+        }
     }
 }
 

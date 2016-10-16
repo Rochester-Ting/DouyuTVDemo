@@ -23,6 +23,11 @@
 		CA82BC021DAFCDFD00FB19D8 /* RecommandHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA82BC001DAFCDFD00FB19D8 /* RecommandHeadView.xib */; };
 		CA82BC051DAFDFD000FB19D8 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82BC041DAFDFD000FB19D8 /* NetworkTools.swift */; };
 		CAD552FE1DB2019E001B06D9 /* RecommandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD552FD1DB2019E001B06D9 /* RecommandViewModel.swift */; };
+		CADA57E21DB3B1EA00D2D801 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57E11DB3B1EA00D2D801 /* CycleModel.swift */; };
+		CADA57E41DB3B6BE00D2D801 /* CycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57E31DB3B6BE00D2D801 /* CycleView.swift */; };
+		CADA57E61DB3B6CB00D2D801 /* CycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADA57E51DB3B6CB00D2D801 /* CycleView.xib */; };
+		CADA57E91DB3BD5100D2D801 /* CycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57E71DB3BD5100D2D801 /* CycleCell.swift */; };
+		CADA57EA1DB3BD5100D2D801 /* CycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADA57E81DB3BD5100D2D801 /* CycleCell.xib */; };
 		CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA030C1DAD3C30001F6704 /* PageContentView.swift */; };
 		CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */; };
 		CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C521DAA6A83008853A5 /* Assets.xcassets */; };
@@ -73,6 +78,11 @@
 		CA82BC001DAFCDFD00FB19D8 /* RecommandHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RecommandHeadView.xib; path = "RRDouyuTV/Classes/Main(主界面)/View/RecommandHeadView.xib"; sourceTree = SOURCE_ROOT; };
 		CA82BC041DAFDFD000FB19D8 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		CAD552FD1DB2019E001B06D9 /* RecommandViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommandViewModel.swift; sourceTree = "<group>"; };
+		CADA57E11DB3B1EA00D2D801 /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CycleModel.swift; path = "RRDouyuTV/Classes/Home(首页)/CycleModel.swift"; sourceTree = SOURCE_ROOT; };
+		CADA57E31DB3B6BE00D2D801 /* CycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CycleView.swift; path = "RRDouyuTV/Classes/Home(首页)/CycleView.swift"; sourceTree = SOURCE_ROOT; };
+		CADA57E51DB3B6CB00D2D801 /* CycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CycleView.xib; path = "RRDouyuTV/Classes/Home(首页)/CycleView.xib"; sourceTree = SOURCE_ROOT; };
+		CADA57E71DB3BD5100D2D801 /* CycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CycleCell.swift; path = "RRDouyuTV/Classes/Home(首页)/CycleCell.swift"; sourceTree = SOURCE_ROOT; };
+		CADA57E81DB3BD5100D2D801 /* CycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CycleCell.xib; path = "RRDouyuTV/Classes/Home(首页)/CycleCell.xib"; sourceTree = SOURCE_ROOT; };
 		CAEA030C1DAD3C30001F6704 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		CAEA1C481DAA6A83008853A5 /* RRDouyuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRDouyuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -273,6 +283,7 @@
 		CAEA1C8E1DAA92F3008853A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CADA57E11DB3B1EA00D2D801 /* CycleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +293,10 @@
 			children = (
 				CA82BBFF1DAFCDFD00FB19D8 /* RecommandHeadView.swift */,
 				CA82BC001DAFCDFD00FB19D8 /* RecommandHeadView.xib */,
+				CADA57E31DB3B6BE00D2D801 /* CycleView.swift */,
+				CADA57E51DB3B6CB00D2D801 /* CycleView.xib */,
+				CADA57E71DB3BD5100D2D801 /* CycleCell.swift */,
+				CADA57E81DB3BD5100D2D801 /* CycleCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -519,11 +534,13 @@
 				CAEA1C891DAA79E5008853A5 /* FolloewViewController.storyboard in Resources */,
 				CA82BBFE1DAFCD0F00FB19D8 /* RecommanBeautifulCell.xib in Resources */,
 				CAEA1C8B1DAA79F8008853A5 /* MeViewController.storyboard in Resources */,
+				CADA57E61DB3B6CB00D2D801 /* CycleView.xib in Resources */,
 				CAEA1C841DAA79B9008853A5 /* HomeViewController.storyboard in Resources */,
 				CAEA1C561DAA6A83008853A5 /* LaunchScreen.storyboard in Resources */,
 				CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */,
 				CA82BC021DAFCDFD00FB19D8 /* RecommandHeadView.xib in Resources */,
 				CAEA1C861DAA79CE008853A5 /* LiveViewController.storyboard in Resources */,
+				CADA57EA1DB3BD5100D2D801 /* CycleCell.xib in Resources */,
 				CA82BBFA1DAFCCF500FB19D8 /* RecommandNormalCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,8 +626,11 @@
 				CA82BBFD1DAFCD0F00FB19D8 /* RecommanBeautifulCell.swift in Sources */,
 				CA1452861DAD180700BA39CA /* PageTitleView.swift in Sources */,
 				CA82BC051DAFDFD000FB19D8 /* NetworkTools.swift in Sources */,
+				CADA57E41DB3B6BE00D2D801 /* CycleView.swift in Sources */,
+				CADA57E21DB3B1EA00D2D801 /* CycleModel.swift in Sources */,
 				CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */,
 				CA1452881DAD1AB900BA39CA /* Common.swift in Sources */,
+				CADA57E91DB3BD5100D2D801 /* CycleCell.swift in Sources */,
 				CAEA1C9E1DAAA154008853A5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

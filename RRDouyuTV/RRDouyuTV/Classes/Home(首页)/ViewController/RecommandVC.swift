@@ -29,7 +29,7 @@ class RecommandVC: UIViewController {
         layout.sectionInset = UIEdgeInsetsMake(0, kItemMargin, 0, kItemMargin)
         
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
-        collectionView.contentInset = UIEdgeInsetsMake(0, 0, kStatusBarH + kNavigationH + kTitleViewH + kTabBarH, 0)
+        collectionView.contentInset = UIEdgeInsetsMake(kClycleH, 0, kStatusBarH + kNavigationH + kTitleViewH + kTabBarH, 0)
         self.collectionView = collectionView;
         collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
@@ -51,6 +51,8 @@ class RecommandVC: UIViewController {
         addCollectionView()
         // 获取数据
         GetNetwork()
+        //添加轮播图
+        addCycleView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -122,6 +124,13 @@ extension RecommandVC{
         }
     }
 }
-
+// MARK:- 添加无限循环轮播图
+extension RecommandVC{
+    func addCycleView(){
+        let cycleView = CycleView.cycleView()
+        cycleView.frame = CGRect(x: 0, y: -kClycleH, width: kScreenW, height: kClycleH)
+        collectionView.addSubview(cycleView)
+    }
+}
 
 

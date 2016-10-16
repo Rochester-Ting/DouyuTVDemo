@@ -15,4 +15,5 @@ let kTitleViewH : CGFloat = 40
 let kTabBarH : CGFloat = 44
 let kScreenW : CGFloat = UIScreen.main.bounds.size.width
 let kScreenH : CGFloat = UIScreen.main.bounds.size.height
+let kClycleH : CGFloat = 150
 

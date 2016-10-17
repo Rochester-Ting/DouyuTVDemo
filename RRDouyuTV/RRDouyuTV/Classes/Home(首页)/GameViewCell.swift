@@ -9,6 +9,7 @@
 import UIKit
 
 class GameViewCell: UICollectionViewCell {
+    @IBOutlet weak var line: UIView!
     @IBOutlet weak var titleNameLabel: UILabel!
     @IBOutlet weak var gameImage: UIImageView!
     var gameModel : RGameModel?{

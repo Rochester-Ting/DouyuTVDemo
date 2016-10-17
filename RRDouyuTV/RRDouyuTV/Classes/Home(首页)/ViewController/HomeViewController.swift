@@ -26,7 +26,8 @@ class HomeViewController: UIViewController {
         var childVC : [UIViewController] = [UIViewController]()
         let recommandVC  = RecommandVC()
         childVC.append(recommandVC)
-        for _ in 0..<3 {
+        childVC.append(GameVC())
+        for _ in 0..<2 {
             let vc = UIViewController()
             // MARK:- 设置vc的背景颜色
             vc.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(255)) / 255.0, green: CGFloat(arc4random_uniform(255)) / 255.0, blue: CGFloat(arc4random_uniform(255)) / 255.0, alpha: 1)

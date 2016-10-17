@@ -20,6 +20,12 @@
                         <nil key="highlightedColor"/>
                         <size key="shadowOffset" width="1" height="-1"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KoV-ek-bEh">
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="HFz-Ph-pLQ"/>
+                        </constraints>
+                    </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="gGT-jY-yPK">
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="EPo-qc-0OD"/>
@@ -29,17 +35,20 @@
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="pC4-uT-iJr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="4DH-ml-PCn"/>
                 <constraint firstItem="gGT-jY-yPK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="82T-K0-UsZ"/>
                 <constraint firstItem="pC4-uT-iJr" firstAttribute="top" secondItem="gGT-jY-yPK" secondAttribute="bottom" constant="10" id="AFs-Kz-4Fg"/>
-                <constraint firstAttribute="bottom" secondItem="pC4-uT-iJr" secondAttribute="bottom" id="M8l-UX-tFK"/>
-                <constraint firstItem="pC4-uT-iJr" firstAttribute="top" secondItem="gGT-jY-yPK" secondAttribute="bottom" constant="10" id="Na2-wV-Lp5"/>
-                <constraint firstAttribute="trailing" secondItem="pC4-uT-iJr" secondAttribute="trailing" id="VrY-Cj-y5g"/>
-                <constraint firstItem="pC4-uT-iJr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="agj-m9-isf"/>
+                <constraint firstItem="KoV-ek-bEh" firstAttribute="top" secondItem="pC4-uT-iJr" secondAttribute="bottom" constant="5" id="FWq-Ia-aR4"/>
+                <constraint firstItem="KoV-ek-bEh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GqO-2s-GaV"/>
+                <constraint firstAttribute="trailing" secondItem="KoV-ek-bEh" secondAttribute="trailing" id="I4f-Jf-hqC"/>
+                <constraint firstItem="gGT-jY-yPK" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dIq-EM-buN"/>
+                <constraint firstAttribute="bottom" secondItem="KoV-ek-bEh" secondAttribute="bottom" id="rFl-Sr-WuS"/>
                 <constraint firstItem="gGT-jY-yPK" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wJe-TI-E9K"/>
             </constraints>
             <size key="customSize" width="117" height="87"/>
             <connections>
                 <outlet property="gameImage" destination="gGT-jY-yPK" id="RIk-M6-XYr"/>
+                <outlet property="line" destination="KoV-ek-bEh" id="uvp-9w-kzP"/>
                 <outlet property="titleNameLabel" destination="pC4-uT-iJr" id="yT8-eD-FuQ"/>
             </connections>
             <point key="canvasLocation" x="67.5" y="188.5"/>

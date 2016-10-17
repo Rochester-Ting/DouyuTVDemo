@@ -32,6 +32,9 @@
 		CADA57EE1DB3D36100D2D801 /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADA57ED1DB3D36100D2D801 /* GameView.xib */; };
 		CADA57F11DB3DA7D00D2D801 /* GameViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57EF1DB3DA7D00D2D801 /* GameViewCell.swift */; };
 		CADA57F21DB3DA7D00D2D801 /* GameViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADA57F01DB3DA7D00D2D801 /* GameViewCell.xib */; };
+		CADA57F41DB4C14600D2D801 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57F31DB4C14600D2D801 /* GameVC.swift */; };
+		CADA57F61DB4C48200D2D801 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57F51DB4C48200D2D801 /* UIColor.swift */; };
+		CADA57F81DB4C7DA00D2D801 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57F71DB4C7DA00D2D801 /* GameViewModel.swift */; };
 		CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA030C1DAD3C30001F6704 /* PageContentView.swift */; };
 		CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */; };
 		CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C521DAA6A83008853A5 /* Assets.xcassets */; };
@@ -91,6 +94,9 @@
 		CADA57ED1DB3D36100D2D801 /* GameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameView.xib; path = "RRDouyuTV/Classes/Home(首页)/GameView.xib"; sourceTree = SOURCE_ROOT; };
 		CADA57EF1DB3DA7D00D2D801 /* GameViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewCell.swift; path = "RRDouyuTV/Classes/Home(首页)/GameViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		CADA57F01DB3DA7D00D2D801 /* GameViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameViewCell.xib; path = "RRDouyuTV/Classes/Home(首页)/GameViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		CADA57F31DB4C14600D2D801 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		CADA57F51DB4C48200D2D801 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CADA57F71DB4C7DA00D2D801 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewModel.swift; path = "RRDouyuTV/Classes/Tools(工具)/Extension/GameViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		CAEA030C1DAD3C30001F6704 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		CAEA1C481DAA6A83008853A5 /* RRDouyuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRDouyuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 		CA82BC031DAFDF7000FB19D8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CADA57F71DB4C7DA00D2D801 /* GameViewModel.swift */,
 				CAD552FD1DB2019E001B06D9 /* RecommandViewModel.swift */,
 			);
 			name = ViewModel;
@@ -319,6 +326,7 @@
 				CAEA1C821DAA79B9008853A5 /* HomeViewController.storyboard */,
 				CAEA1C9D1DAAA154008853A5 /* HomeViewController.swift */,
 				CA82BBF51DAFBCF600FB19D8 /* RecommandVC.swift */,
+				CADA57F31DB4C14600D2D801 /* GameVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -424,6 +432,7 @@
 			isa = PBXGroup;
 			children = (
 				CAEA1CA01DAAA939008853A5 /* UIBarButtonItem.swift */,
+				CADA57F51DB4C48200D2D801 /* UIColor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -632,9 +641,12 @@
 				CAD552FE1DB2019E001B06D9 /* RecommandViewModel.swift in Sources */,
 				CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */,
 				CA82BC011DAFCDFD00FB19D8 /* RecommandHeadView.swift in Sources */,
+				CADA57F41DB4C14600D2D801 /* GameVC.swift in Sources */,
 				CAEA1CA11DAAA939008853A5 /* UIBarButtonItem.swift in Sources */,
 				CA82BBF61DAFBCF600FB19D8 /* RecommandVC.swift in Sources */,
+				CADA57F61DB4C48200D2D801 /* UIColor.swift in Sources */,
 				CA4AD8181DB1FBCE008DC0F2 /* RAchorModel.swift in Sources */,
+				CADA57F81DB4C7DA00D2D801 /* GameViewModel.swift in Sources */,
 				CA4AD8161DB1FBBF008DC0F2 /* RGameModel.swift in Sources */,
 				CA82BBF91DAFCCF500FB19D8 /* RecommandNormalCell.swift in Sources */,
 				CA82BBFD1DAFCD0F00FB19D8 /* RecommanBeautifulCell.swift in Sources */,

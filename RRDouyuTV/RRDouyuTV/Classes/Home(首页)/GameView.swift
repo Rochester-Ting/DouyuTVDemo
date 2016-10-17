@@ -10,16 +10,11 @@ import UIKit
 fileprivate let kgameCellId = "kgameCellId"
 fileprivate let kItemSize = 70
 fileprivate let kMargin = 10
+
 class GameView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     var gameArrs : [RGameModel]?{
         didSet {
-            gameArrs?.removeFirst()
-            gameArrs?.removeFirst()
-            let gameModel : RGameModel = RGameModel()
-            gameModel.icon_name = "home_more_btn"
-            gameModel.tag_name = "更多"
-            gameArrs?.append(gameModel)
             collectionView.reloadData()
         }
     }
@@ -29,7 +24,7 @@ class GameView: UIView {
         collectionView.register(UINib(nibName: "GameViewCell", bundle: nil), forCellWithReuseIdentifier: kgameCellId)
         collectionView.contentInset = UIEdgeInsetsMake(0, CGFloat(kMargin), 0, CGFloat(kMargin))
         collectionView.showsHorizontalScrollIndicator = false
-        
+//        collectionView.backgroundColor = UIColor.red
     }
     class func gameView()->GameView{
         return Bundle.main.loadNibNamed("GameView", owner: nil, options: nil)?.first as! GameView
@@ -55,6 +50,7 @@ extension GameView : UICollectionViewDataSource{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kgameCellId, for: indexPath) as! GameViewCell
     
         cell.gameModel = gameArrs![indexPath.item]
+        cell.line.isHidden = true
         return cell
     }
 }

@@ -20,7 +20,6 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_phone" translatesAutoresizingMaskIntoConstraints="NO" id="uiT-Ug-Frb">
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="cwT-Uo-vxU"/>
-                        <constraint firstAttribute="width" constant="18" id="tys-S3-GJN"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRw-b9-2bT">
@@ -51,6 +50,7 @@
                 <constraint firstItem="uiT-Ug-Frb" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="zKI-XO-COQ"/>
             </constraints>
             <connections>
+                <outlet property="btnMore" destination="1iF-EX-VBA" id="iio-WS-3bd"/>
                 <outlet property="image" destination="uiT-Ug-Frb" id="luv-Ml-xSE"/>
                 <outlet property="tag_name" destination="LRw-b9-2bT" id="ptJ-cO-XnO"/>
             </connections>

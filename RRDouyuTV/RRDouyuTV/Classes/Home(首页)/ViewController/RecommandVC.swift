@@ -125,7 +125,14 @@ extension RecommandVC{
     func GetNetwork() {
         recommandVM.requestHomeData { 
             self.collectionView.reloadData()
-            self.gameView?.gameArrs = self.recommandVM.rGameModelArrs
+            var gameArrs = self.recommandVM.rGameModelArrs
+            gameArrs.removeFirst()
+            gameArrs.removeFirst()
+            let gameModel : RGameModel = RGameModel()
+            gameModel.icon_name = "home_more_btn"
+            gameModel.tag_name = "更多"
+            gameArrs.append(gameModel)
+            self.gameView?.gameArrs = gameArrs
         }
     }
 }

@@ -121,6 +121,18 @@ extension RecommandVC : UICollectionViewDelegateFlowLayout{
             return CGSize(width: kItemWidth, height: kItemHeight)
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let isVertical = recommandVM.rGameModelArrs[indexPath.section].anchors[indexPath.item].isVertical
+        isVertical == 0 ? pushVC() : presentVC()
+    }
+    func pushVC() {
+        navigationController?.pushViewController(RoomNormalVC(), animated: true)
+    }
+    func presentVC(){
+        present(RoomBeatifulVC(), animated: true, completion: nil)
+        
+    }
 }
 // MARK:- 获取网络数据
 extension RecommandVC{

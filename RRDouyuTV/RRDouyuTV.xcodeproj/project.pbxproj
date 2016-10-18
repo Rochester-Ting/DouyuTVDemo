@@ -44,6 +44,9 @@
 		CADA58061DB6403900D2D801 /* FunnyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA58051DB6403900D2D801 /* FunnyVC.swift */; };
 		CADA58081DB6464A00D2D801 /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA58071DB6464A00D2D801 /* FunnyViewModel.swift */; };
 		CADA580A1DB6643B00D2D801 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA58091DB6643B00D2D801 /* BaseViewController.swift */; };
+		CADA58111DB66F5E00D2D801 /* RoomNormalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA58101DB66F5E00D2D801 /* RoomNormalVC.swift */; };
+		CADA58131DB66F8C00D2D801 /* RoomBeatifulVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA58121DB66F8C00D2D801 /* RoomBeatifulVC.swift */; };
+		CADA58151DB6770100D2D801 /* RRNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA58141DB6770100D2D801 /* RRNavigationController.swift */; };
 		CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA030C1DAD3C30001F6704 /* PageContentView.swift */; };
 		CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */; };
 		CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C521DAA6A83008853A5 /* Assets.xcassets */; };
@@ -115,6 +118,9 @@
 		CADA58051DB6403900D2D801 /* FunnyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyVC.swift; sourceTree = "<group>"; };
 		CADA58071DB6464A00D2D801 /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		CADA58091DB6643B00D2D801 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = "RRDouyuTV/Classes/Home(首页)/BaseViewController.swift"; sourceTree = SOURCE_ROOT; };
+		CADA58101DB66F5E00D2D801 /* RoomNormalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomNormalVC.swift; sourceTree = "<group>"; };
+		CADA58121DB66F8C00D2D801 /* RoomBeatifulVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomBeatifulVC.swift; sourceTree = "<group>"; };
+		CADA58141DB6770100D2D801 /* RRNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RRNavigationController.swift; path = "RRDouyuTV/Classes/Main(主界面)/Room/Controller/RRNavigationController.swift"; sourceTree = SOURCE_ROOT; };
 		CAEA030C1DAD3C30001F6704 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		CAEA1C481DAA6A83008853A5 /* RRDouyuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRDouyuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +193,47 @@
 				CADA58071DB6464A00D2D801 /* FunnyViewModel.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CADA580B1DB66F1100D2D801 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				CADA580C1DB66F1100D2D801 /* Controller */,
+				CADA580D1DB66F1100D2D801 /* Model */,
+				CADA580E1DB66F1100D2D801 /* View */,
+				CADA580F1DB66F1100D2D801 /* ViewModel */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		CADA580C1DB66F1100D2D801 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CADA58101DB66F5E00D2D801 /* RoomNormalVC.swift */,
+				CADA58121DB66F8C00D2D801 /* RoomBeatifulVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CADA580D1DB66F1100D2D801 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CADA580E1DB66F1100D2D801 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CADA580F1DB66F1100D2D801 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CAEA1C3F1DAA6A83008853A5 = {
@@ -288,6 +335,7 @@
 		CAEA1C7D1DAA6DBB008853A5 /* Main(主界面) */ = {
 			isa = PBXGroup;
 			children = (
+				CADA580B1DB66F1100D2D801 /* Room */,
 				CAEA1C9C1DAA938D008853A5 /* ViewController */,
 				CAEA1C9B1DAA938D008853A5 /* View */,
 				CAEA1C9A1DAA938D008853A5 /* Model */,
@@ -451,6 +499,7 @@
 				CA82BBF21DAFB86700FB19D8 /* Main.storyboard */,
 				CA82BBF01DAFB85C00FB19D8 /* MainViewController.swift */,
 				CADA58091DB6643B00D2D801 /* BaseViewController.swift */,
+				CADA58141DB6770100D2D801 /* RRNavigationController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -667,6 +716,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CADA57FE1DB51AB100D2D801 /* AmuseHeadView.swift in Sources */,
+				CADA58151DB6770100D2D801 /* RRNavigationController.swift in Sources */,
 				CADA58061DB6403900D2D801 /* FunnyVC.swift in Sources */,
 				CA82BBF11DAFB85C00FB19D8 /* MainViewController.swift in Sources */,
 				CAD552FE1DB2019E001B06D9 /* RecommandViewModel.swift in Sources */,
@@ -683,8 +733,10 @@
 				CADA57F81DB4C7DA00D2D801 /* GameViewModel.swift in Sources */,
 				CA4AD8161DB1FBBF008DC0F2 /* RGameModel.swift in Sources */,
 				CA82BBF91DAFCCF500FB19D8 /* RecommandNormalCell.swift in Sources */,
+				CADA58131DB66F8C00D2D801 /* RoomBeatifulVC.swift in Sources */,
 				CA82BBFD1DAFCD0F00FB19D8 /* RecommanBeautifulCell.swift in Sources */,
 				CADA58081DB6464A00D2D801 /* FunnyViewModel.swift in Sources */,
+				CADA58111DB66F5E00D2D801 /* RoomNormalVC.swift in Sources */,
 				CADA57F11DB3DA7D00D2D801 /* GameViewCell.swift in Sources */,
 				CA1452861DAD180700BA39CA /* PageTitleView.swift in Sources */,
 				CA82BC051DAFDFD000FB19D8 /* NetworkTools.swift in Sources */,

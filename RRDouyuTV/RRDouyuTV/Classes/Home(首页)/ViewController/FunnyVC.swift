@@ -52,7 +52,17 @@ extension FunnyVC{
 }
 
 extension FunnyVC : UICollectionViewDelegate{
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let isVertical = funnyVM.funnyModels[indexPath.item].isVertical
+        isVertical == 0 ? pushVC() : presentVC()
+    }
+    func pushVC() {
+        navigationController?.pushViewController(RoomNormalVC(), animated: true)
+    }
+    func presentVC(){
+        present(RoomBeatifulVC(), animated: true, completion: nil)
+    }
+
 }
 extension FunnyVC : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

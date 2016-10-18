@@ -68,6 +68,17 @@ extension GameVC{
 }
 // MARK:- 遵守代理
 extension GameVC : UICollectionViewDelegate{
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let isVertical = gameVM.modelArrs[indexPath.section].anchors[indexPath.item].isVertical
+//        isVertical == 0 ? pushVC() : presentVC()
+//    }
+//    func pushVC() {
+//        navigationController?.pushViewController(RoomNormalVC(), animated: true)
+//    }
+//    func presentVC(){
+//        present(RoomBeatifulVC(), animated: true, completion: nil)
+//        
+//    }
     
 }
 // MARK:- 遵守数据源

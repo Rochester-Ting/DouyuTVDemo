@@ -67,6 +67,17 @@ extension AmuseVC{
     }
 }
 extension AmuseVC : UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let isVertical = amuseVM.amuseModels[indexPath.section].anchors[indexPath.item].isVertical
+        isVertical == 0 ? pushVC() : presentVC()
+    }
+    func pushVC() {
+        navigationController?.pushViewController(RoomNormalVC(), animated: true)
+    }
+    func presentVC(){
+        present(RoomBeatifulVC(), animated: true, completion: nil)
+        
+    }
     
 }
 extension AmuseVC : UICollectionViewDataSource{

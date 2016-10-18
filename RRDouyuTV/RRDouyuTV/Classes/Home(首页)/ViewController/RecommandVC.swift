@@ -17,7 +17,7 @@ private let kRecommandBeatifulCellId = "recommadBeatifulCell"
 private let kRecommandSectionHeadId = "recommadSectionId"
 // sectionHead的高度
 private let kHeadViewH : CGFloat = 50
-class RecommandVC: UIViewController {
+class RecommandVC: BaseViewController {
     
     var gameView : GameView?
     lazy var recommandVM : RecommandViewModel = RecommandViewModel()
@@ -50,7 +50,7 @@ class RecommandVC: UIViewController {
         // 设置背景颜色
         setBackGroundColor()
         // 添加collectionView
-        addCollectionView()
+        setUpUI()
         // 获取数据
         GetNetwork()
         //添加轮播图
@@ -70,9 +70,11 @@ extension RecommandVC{
         view.backgroundColor = UIColor.white
     }
     // MARK:- 设置collectionView
-    public func addCollectionView(){
+    public override func setUpUI(){
         
+        contentView = collectionView
         view.addSubview(collectionView)
+        super.setUpUI()
     }
 }
 // MARK:- 实现collectionView的数据源方法
@@ -123,7 +125,7 @@ extension RecommandVC : UICollectionViewDelegateFlowLayout{
 // MARK:- 获取网络数据
 extension RecommandVC{
     func GetNetwork() {
-        recommandVM.requestHomeData { 
+        recommandVM.requestHomeData {
             self.collectionView.reloadData()
             var gameArrs = self.recommandVM.rGameModelArrs
             gameArrs.removeFirst()
@@ -133,6 +135,8 @@ extension RecommandVC{
             gameModel.tag_name = "更多"
             gameArrs.append(gameModel)
             self.gameView?.gameArrs = gameArrs
+            // 去掉动画
+            self.stopAnimation()
         }
     }
 }

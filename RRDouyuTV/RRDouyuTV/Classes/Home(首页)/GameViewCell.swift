@@ -24,7 +24,7 @@ class GameViewCell: UICollectionViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        gameImage.layer.cornerRadius = 20
+        gameImage.layer.cornerRadius = 22.5
         gameImage.clipsToBounds = true
     }
 

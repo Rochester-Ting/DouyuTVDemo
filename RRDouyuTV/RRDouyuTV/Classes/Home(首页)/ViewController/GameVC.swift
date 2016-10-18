@@ -12,7 +12,7 @@ private let kItemH : CGFloat = 90
 private let kHeadViewH : CGFloat = 50
 fileprivate let kgameCellId = "kgameCellId"
 fileprivate let krecommadSectionId = "recommadSectionId"
-class GameVC: UIViewController {
+class GameVC: BaseViewController {
     var headCollectinView : GameView?
     fileprivate lazy var collectionView : UICollectionView = {[unowned self] in
         let layout = UICollectionViewFlowLayout()
@@ -37,6 +37,7 @@ class GameVC: UIViewController {
         gameVM.requestGameData {[unowned self] in
             self.collectionView.reloadData()
             self.headCollectinView?.gameArrs = Array(self.gameVM.modelArrs[0..<10])
+            self.stopAnimation()
         }
         
         
@@ -44,7 +45,7 @@ class GameVC: UIViewController {
 }
 // MARK:- 设置UI
 extension GameVC{
-    func setUpUI() {
+    override func setUpUI() {
         view.addSubview(collectionView)
         automaticallyAdjustsScrollViewInsets = false
         let headCollectionView = GameView.gameView()
@@ -59,6 +60,10 @@ extension GameVC{
         topHead.btnMore.isHidden = true
         collectionView.addSubview(topHead)
         
+        contentView = collectionView
+        super.setUpUI()
+        
+
     }
 }
 // MARK:- 遵守代理

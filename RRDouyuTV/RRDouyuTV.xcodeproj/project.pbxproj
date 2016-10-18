@@ -35,6 +35,15 @@
 		CADA57F41DB4C14600D2D801 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57F31DB4C14600D2D801 /* GameVC.swift */; };
 		CADA57F61DB4C48200D2D801 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57F51DB4C48200D2D801 /* UIColor.swift */; };
 		CADA57F81DB4C7DA00D2D801 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57F71DB4C7DA00D2D801 /* GameViewModel.swift */; };
+		CADA57FA1DB50B6700D2D801 /* AmuseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57F91DB50B6700D2D801 /* AmuseVC.swift */; };
+		CADA57FC1DB510C900D2D801 /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57FB1DB510C900D2D801 /* AmuseViewModel.swift */; };
+		CADA57FE1DB51AB100D2D801 /* AmuseHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA57FD1DB51AB100D2D801 /* AmuseHeadView.swift */; };
+		CADA58001DB51ACC00D2D801 /* AmuseHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADA57FF1DB51ACC00D2D801 /* AmuseHeadView.xib */; };
+		CADA58031DB52D6E00D2D801 /* AmuseHeadViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA58011DB52D6E00D2D801 /* AmuseHeadViewCell.swift */; };
+		CADA58041DB52D6E00D2D801 /* AmuseHeadViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADA58021DB52D6E00D2D801 /* AmuseHeadViewCell.xib */; };
+		CADA58061DB6403900D2D801 /* FunnyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA58051DB6403900D2D801 /* FunnyVC.swift */; };
+		CADA58081DB6464A00D2D801 /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA58071DB6464A00D2D801 /* FunnyViewModel.swift */; };
+		CADA580A1DB6643B00D2D801 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA58091DB6643B00D2D801 /* BaseViewController.swift */; };
 		CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA030C1DAD3C30001F6704 /* PageContentView.swift */; };
 		CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */; };
 		CAEA1C531DAA6A83008853A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAEA1C521DAA6A83008853A5 /* Assets.xcassets */; };
@@ -97,6 +106,15 @@
 		CADA57F31DB4C14600D2D801 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		CADA57F51DB4C48200D2D801 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CADA57F71DB4C7DA00D2D801 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewModel.swift; path = "RRDouyuTV/Classes/Tools(工具)/Extension/GameViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		CADA57F91DB50B6700D2D801 /* AmuseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseVC.swift; sourceTree = "<group>"; };
+		CADA57FB1DB510C900D2D801 /* AmuseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
+		CADA57FD1DB51AB100D2D801 /* AmuseHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmuseHeadView.swift; path = "RRDouyuTV/Classes/Home(首页)/AmuseHeadView.swift"; sourceTree = SOURCE_ROOT; };
+		CADA57FF1DB51ACC00D2D801 /* AmuseHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AmuseHeadView.xib; path = "RRDouyuTV/Classes/Home(首页)/AmuseHeadView.xib"; sourceTree = SOURCE_ROOT; };
+		CADA58011DB52D6E00D2D801 /* AmuseHeadViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmuseHeadViewCell.swift; path = "RRDouyuTV/Classes/Home(首页)/AmuseHeadViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		CADA58021DB52D6E00D2D801 /* AmuseHeadViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AmuseHeadViewCell.xib; path = "RRDouyuTV/Classes/Home(首页)/AmuseHeadViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		CADA58051DB6403900D2D801 /* FunnyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyVC.swift; sourceTree = "<group>"; };
+		CADA58071DB6464A00D2D801 /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
+		CADA58091DB6643B00D2D801 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = "RRDouyuTV/Classes/Home(首页)/BaseViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CAEA030C1DAD3C30001F6704 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		CAEA1C481DAA6A83008853A5 /* RRDouyuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRDouyuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEA1C4B1DAA6A83008853A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +183,8 @@
 			children = (
 				CADA57F71DB4C7DA00D2D801 /* GameViewModel.swift */,
 				CAD552FD1DB2019E001B06D9 /* RecommandViewModel.swift */,
+				CADA57FB1DB510C900D2D801 /* AmuseViewModel.swift */,
+				CADA58071DB6464A00D2D801 /* FunnyViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -316,6 +336,10 @@
 				CADA57ED1DB3D36100D2D801 /* GameView.xib */,
 				CADA57EF1DB3DA7D00D2D801 /* GameViewCell.swift */,
 				CADA57F01DB3DA7D00D2D801 /* GameViewCell.xib */,
+				CADA57FD1DB51AB100D2D801 /* AmuseHeadView.swift */,
+				CADA57FF1DB51ACC00D2D801 /* AmuseHeadView.xib */,
+				CADA58011DB52D6E00D2D801 /* AmuseHeadViewCell.swift */,
+				CADA58021DB52D6E00D2D801 /* AmuseHeadViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +351,8 @@
 				CAEA1C9D1DAAA154008853A5 /* HomeViewController.swift */,
 				CA82BBF51DAFBCF600FB19D8 /* RecommandVC.swift */,
 				CADA57F31DB4C14600D2D801 /* GameVC.swift */,
+				CADA57F91DB50B6700D2D801 /* AmuseVC.swift */,
+				CADA58051DB6403900D2D801 /* FunnyVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -424,6 +450,7 @@
 			children = (
 				CA82BBF21DAFB86700FB19D8 /* Main.storyboard */,
 				CA82BBF01DAFB85C00FB19D8 /* MainViewController.swift */,
+				CADA58091DB6643B00D2D801 /* BaseViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -555,6 +582,7 @@
 				CA82BBF41DAFB86700FB19D8 /* Main.storyboard in Resources */,
 				CAEA1C891DAA79E5008853A5 /* FolloewViewController.storyboard in Resources */,
 				CADA57EE1DB3D36100D2D801 /* GameView.xib in Resources */,
+				CADA58001DB51ACC00D2D801 /* AmuseHeadView.xib in Resources */,
 				CA82BBFE1DAFCD0F00FB19D8 /* RecommanBeautifulCell.xib in Resources */,
 				CAEA1C8B1DAA79F8008853A5 /* MeViewController.storyboard in Resources */,
 				CADA57E61DB3B6CB00D2D801 /* CycleView.xib in Resources */,
@@ -564,6 +592,7 @@
 				CA82BC021DAFCDFD00FB19D8 /* RecommandHeadView.xib in Resources */,
 				CAEA1C861DAA79CE008853A5 /* LiveViewController.storyboard in Resources */,
 				CADA57EA1DB3BD5100D2D801 /* CycleCell.xib in Resources */,
+				CADA58041DB52D6E00D2D801 /* AmuseHeadViewCell.xib in Resources */,
 				CA82BBFA1DAFCCF500FB19D8 /* RecommandNormalCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,12 +666,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CADA57FE1DB51AB100D2D801 /* AmuseHeadView.swift in Sources */,
+				CADA58061DB6403900D2D801 /* FunnyVC.swift in Sources */,
 				CA82BBF11DAFB85C00FB19D8 /* MainViewController.swift in Sources */,
 				CAD552FE1DB2019E001B06D9 /* RecommandViewModel.swift in Sources */,
 				CAEA1C4C1DAA6A83008853A5 /* AppDelegate.swift in Sources */,
+				CADA580A1DB6643B00D2D801 /* BaseViewController.swift in Sources */,
+				CADA58031DB52D6E00D2D801 /* AmuseHeadViewCell.swift in Sources */,
 				CA82BC011DAFCDFD00FB19D8 /* RecommandHeadView.swift in Sources */,
 				CADA57F41DB4C14600D2D801 /* GameVC.swift in Sources */,
 				CAEA1CA11DAAA939008853A5 /* UIBarButtonItem.swift in Sources */,
+				CADA57FC1DB510C900D2D801 /* AmuseViewModel.swift in Sources */,
 				CA82BBF61DAFBCF600FB19D8 /* RecommandVC.swift in Sources */,
 				CADA57F61DB4C48200D2D801 /* UIColor.swift in Sources */,
 				CA4AD8181DB1FBCE008DC0F2 /* RAchorModel.swift in Sources */,
@@ -650,6 +684,7 @@
 				CA4AD8161DB1FBBF008DC0F2 /* RGameModel.swift in Sources */,
 				CA82BBF91DAFCCF500FB19D8 /* RecommandNormalCell.swift in Sources */,
 				CA82BBFD1DAFCD0F00FB19D8 /* RecommanBeautifulCell.swift in Sources */,
+				CADA58081DB6464A00D2D801 /* FunnyViewModel.swift in Sources */,
 				CADA57F11DB3DA7D00D2D801 /* GameViewCell.swift in Sources */,
 				CA1452861DAD180700BA39CA /* PageTitleView.swift in Sources */,
 				CA82BC051DAFDFD000FB19D8 /* NetworkTools.swift in Sources */,
@@ -657,6 +692,7 @@
 				CADA57EC1DB3D35700D2D801 /* GameView.swift in Sources */,
 				CADA57E21DB3B1EA00D2D801 /* CycleModel.swift in Sources */,
 				CAEA030D1DAD3C30001F6704 /* PageContentView.swift in Sources */,
+				CADA57FA1DB50B6700D2D801 /* AmuseVC.swift in Sources */,
 				CA1452881DAD1AB900BA39CA /* Common.swift in Sources */,
 				CADA57E91DB3BD5100D2D801 /* CycleCell.swift in Sources */,
 				CAEA1C9E1DAAA154008853A5 /* HomeViewController.swift in Sources */,

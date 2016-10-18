@@ -8,10 +8,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kgameCellId" id="gTV-IL-0wX" customClass="GameViewCell" customModule="RRDouyuTV" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="117" height="87"/>
+            <rect key="frame" x="0.0" y="0.0" width="243" height="237"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="117" height="87"/>
+                <rect key="frame" x="0.0" y="0.0" width="243" height="237"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dota2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC4-uT-iJr">
@@ -28,8 +28,8 @@
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="gGT-jY-yPK">
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="EPo-qc-0OD"/>
-                            <constraint firstAttribute="width" constant="40" id="gDQ-Ob-rHk"/>
+                            <constraint firstAttribute="height" constant="45" id="EPo-qc-0OD"/>
+                            <constraint firstAttribute="width" constant="45" id="gDQ-Ob-rHk"/>
                         </constraints>
                     </imageView>
                 </subviews>
@@ -37,7 +37,7 @@
             <constraints>
                 <constraint firstItem="pC4-uT-iJr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="4DH-ml-PCn"/>
                 <constraint firstItem="gGT-jY-yPK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="82T-K0-UsZ"/>
-                <constraint firstItem="pC4-uT-iJr" firstAttribute="top" secondItem="gGT-jY-yPK" secondAttribute="bottom" constant="10" id="AFs-Kz-4Fg"/>
+                <constraint firstItem="pC4-uT-iJr" firstAttribute="top" secondItem="gGT-jY-yPK" secondAttribute="bottom" constant="5" id="AFs-Kz-4Fg"/>
                 <constraint firstItem="KoV-ek-bEh" firstAttribute="top" secondItem="pC4-uT-iJr" secondAttribute="bottom" constant="5" id="FWq-Ia-aR4"/>
                 <constraint firstItem="KoV-ek-bEh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GqO-2s-GaV"/>
                 <constraint firstAttribute="trailing" secondItem="KoV-ek-bEh" secondAttribute="trailing" id="I4f-Jf-hqC"/>
@@ -45,13 +45,13 @@
                 <constraint firstAttribute="bottom" secondItem="KoV-ek-bEh" secondAttribute="bottom" id="rFl-Sr-WuS"/>
                 <constraint firstItem="gGT-jY-yPK" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wJe-TI-E9K"/>
             </constraints>
-            <size key="customSize" width="117" height="87"/>
+            <size key="customSize" width="160" height="124"/>
             <connections>
                 <outlet property="gameImage" destination="gGT-jY-yPK" id="RIk-M6-XYr"/>
                 <outlet property="line" destination="KoV-ek-bEh" id="uvp-9w-kzP"/>
                 <outlet property="titleNameLabel" destination="pC4-uT-iJr" id="yT8-eD-FuQ"/>
             </connections>
-            <point key="canvasLocation" x="67.5" y="188.5"/>
+            <point key="canvasLocation" x="88.5" y="206.5"/>
         </collectionViewCell>
     </objects>
     <resources>
